@@ -1,0 +1,29 @@
+digraph {
+
+A -> type in zipcode in search bar
+
+A -> Expedition -> Expedition Page -> List of Points of interest;
+A -> Expedition -> Expedition Page -> List of Categories of the different Expeditions;
+A -> Expedition -> Expedition Page -> Map with trail lines and plots;
+A -> Expedition -> Expedition Page -> 
+
+A -> Create Map -> Login/SignUp -> Create Account;
+A -> Create Map -> Login/SignUp -> Login Page;
+
+A -> Login/SignUp -> Create Account;
+A -> Login/SignUp -> Login Page -> User Dashboard;
+
+User Dashboard -> Maps Created;
+User Dashboard -> Maps Used;
+User Dashboard -> Toggle Follow Me On or Off;
+User Dashboard -> User Info;
+
+A -> About Us;
+A -> Contact Us;
+A -> Press;
+
+Home Page = A;
+
+}
+
+
