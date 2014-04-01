@@ -1,28 +1,21 @@
 digraph {
 
-A -> type in zipcode in search bar
+a -> "type in zipcode in search bar" -> "hit search button" -> b;
+a -> "click on featured Expedition" -> b;
 
-A -> Expedition -> Expedition Page -> List of Points of interest;
-A -> Expedition -> Expedition Page -> List of Categories of the different Expeditions;
-A -> Expedition -> Expedition Page -> Map with trail lines and plots;
-A -> Expedition -> Expedition Page -> 
+b -> "click on desired Expedition" -> c;
+b -> "change filter settings" -> "click on desired Expedition" -> c;
 
-A -> Create Map -> Login/SignUp -> Create Account;
-A -> Create Map -> Login/SignUp -> Login Page;
+c -> "user can rate Expedition" ->[label="signed in"] -> "Login page";
+c -> "user can rate Expedition" ->[label="signed out"] -> "Login page";
+c -> "user can rate Expedition" ->[label="signed out"] -> "Sign up page";
 
-A -> Login/SignUp -> Create Account;
-A -> Login/SignUp -> Login Page -> User Dashboard;
 
-User Dashboard -> Maps Created;
-User Dashboard -> Maps Used;
-User Dashboard -> Toggle Follow Me On or Off;
-User Dashboard -> User Info;
+a [label="Home Page"];
+b [label="Expeditions Page"];
+c [label="Description Page of Expedition"];
 
-A -> About Us;
-A -> Contact Us;
-A -> Press;
-
-Home Page = A;
+d [label="Point of Interest"];
 
 }
 
