@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Drew Koch
+    Macy Aviles
+    Chris Eisenbraun
+
+# THANKS
+
+    No thanks to Dale
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr, Skeleton
