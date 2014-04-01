@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Drew Koch
+    Macy Aviles
+    Chris Eisenbraun
 
 # THANKS
 
-    <name>
+    No thanks to Dale
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Normalize.css, jQuery, Modernizr, Skeleton
