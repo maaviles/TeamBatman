@@ -9,25 +9,96 @@
 
 /* Table of Content
 ==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
+  #Site Styles
+  #Page Styles
+  #Media Queries
+  #Font-Face */
+
+
+/*Colors*/
+/*
+*Dark Blue - #061f40
+*#1b72bf
+*#2a5e8c
+#2393d9
+#404040
+#3ab851
+*/
+
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+
 
 /* #Site Styles
 ================================================== */
-*, *:before, *:after {
-	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+*, *:before, *:after {-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  margin: 0;
+  padding:0;
+  list-style-type: none;
+}
+
+a {
+  color: #1b72bf;
+  text-decoration: none;
 }
 
 html {
-	line-height: 1;
+  line-height: 1;
+}
+
+body  {
+ font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+   font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+}
+
+button {
+  padding: .4em 1em;
+  border: 2px solid;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0);
+  color: #404040;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.cta {
+  border-color: #3ab851;
+}
+
+.default {
+  border-color: #1b72bf;
+}
+
+.link {
+  border: none;
+}
+
+
+button.full-width {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 
 /* img {
-	height: auto;
-	width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 
@@ -39,36 +110,38 @@ html {
 /* #Media Queries
 ================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {}
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {}
 
 
 /* #Font-Face
 ================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
+/*   This is the proper syntax for an @font-face file
+    Just create a "fonts" folder at the root,
+    copy your FontName into code below and remove
+    comment brackets */
 
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
+/*  @font-face {
+      font-family: 'FontName';
+      src: url('../fonts/FontName.eot');
+      src: url('../fonts/FontName.eot?iefix') format('eot'),
+           url('../fonts/FontName.woff') format('woff'),
+           url('../fonts/FontName.ttf') format('truetype'),
+           url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+      font-weight: normal;
+      font-style: normal; }
 */
+
+
