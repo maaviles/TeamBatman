@@ -66,33 +66,53 @@ p {
 }
 
 button {
-  padding: .4em 1em;
+  padding: .45em 1em;
   border: 2px solid;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0);
-  color: #404040;
+  color: rgba(0,0,0,0.7);
   text-align: center;
   font-weight: 600;
 }
 
-
-.cta {
+button.cta {
   border-color: #3ab851;
 }
 
-.default {
+button.cta:hover, button.cta:focus, button.cta:active {
+  border-color: #319944;
+}
+
+button.default {
   border-color: #1b72bf;
 }
 
-.link {
+button.default:hover, button.default:focus, button.default:active {
+  border-color: #155B99;
+}
+
+button.link {
   border: none;
 }
 
+button.link:hover, button.link:focus, button.link:active {
+  color: #636363;
+}
 
 button.full-width {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+}
+
+input {
+  padding: .4em 1em;
+  border-radius: 3px;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+
+fieldset {
+  border: 0;
 }
 
 
