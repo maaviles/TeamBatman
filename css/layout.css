@@ -272,7 +272,7 @@ figure img {
 
 .featured-expeditions h1 {
   margin: 1.5em;
-};
+}
 
 .beer-tour {
   width: 300px;
@@ -282,6 +282,28 @@ figure img {
 
 
 
+/* #Expedition Page Styles
+================================================== */
+/*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
+main.expo-main {
+
+ margin-top: 70px;
+}
+
+.expo-list ul,
+expo-list li {
+background: red;
+}
+
+
+/*Setting these <a> as display inline-block allows us to adjust padding and margin on all sides.  - Adding width 100% will allow it to fill its parent container, the <li>
+ * See expo-anchors-before and after images in screenshots folder
+ * */
+.expo-list a {
+  display: inline-block;
+  width: 100%;
+
+}
 
 /* #Media Queries
 ================================================== */
@@ -356,5 +378,4 @@ figure img {
 .icon-happy:before {
   content: "\e608";
 }
-
 
