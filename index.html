@@ -22,6 +22,7 @@
       <div class="container">
         <div class="sixteen columns clearfix navbar">
           <h1><span class="icon-directions"></span>Voyager</h1>
+          <button id="mobile-menu-trigger" class="link mobile-menu-trigger icon-th-menu"></button>
           <nav>
             <button class="link-inverse">Design an Expedition</button>
             <button class="link-inverse">Log In</button>
@@ -29,6 +30,11 @@
           </nav>
         </div>
       </div>
+      <nav id="mobile-menu" class="mobile-menu slideOutUp"> <!-- mobile menu -->
+        <button class="link-inverse full-width">Design an Expedition</button>
+        <button class="link-inverse full-width">Log In</button>
+        <button class="inverse full-width">Sign Up</button>
+      </nav>
     </header>
 
     <main>
@@ -37,7 +43,7 @@
         <h1>Go on a <span>secret bike tour</span>, <i>crafted by a local</i></h1>
         <form class="hero-form">
           <fieldset>
-            <input class="hero-input" type="search" placeholder="What city do you want to explore?" autofocus>
+            <input class="hero-input" type="search" placeholder="Enter a city" required autofocus>
             <button class="hero-button inverse" type="submit">Search</button>
           </fieldset>
         </form>
@@ -69,34 +75,32 @@
 
       <section class="container featured-expeditions"> <!-- featured expeditions section -->
         <h1>Featured Expeditions</h1>
-        <article class="one-third column beer-tour"> <!-- expedition 1 -->
-          <h1>Beer Tour</h1>
-          <p>Go from brewery to brewery, stopping at fun parks along the way</p>
-        </article>
-        <article class="one-third column"> <!-- expedition 2 -->
-          <h1>Expedition 1</h1>
-          <p>Description of the expedition</p>
-        </article>
-        <article class="one-third column"> <!-- expedition 3 -->
-          <h1>Expedition 1</h1>
-          <p>Description of the expedition</p>
-        </article>
+        <a href="#" class="one-third column featured featured-1"> <!-- expedition 1 -->
+          <h1>Craft Brewery Tour</h1>
+        </a>
+        <a href="#" class="one-third column featured featured-2"> <!-- expedition 2 -->
+          <h1>Secret Bike Tour</h1>
+        </a>
+        <a href="#" class="one-third column featured featured-3"> <!-- expedition 3 -->
+          <h1>Space Needle Tour</h1>
+        </a>
       </section>
-      <div style="text-align: center;">
-        <button class="default">Plan your Saturday today!</button>
+      <div class="call-to-action">
+        <button class="big default">Plan your Saturday today!</button>
       </div>
     </main>
     <footer class="container">
       <nav class="sixteen columns">
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Press</a>
+        <a href="#">About Us</a> |
+        <a href="#">Contact Us</a> |
+        <a href="#">Press</a> |
         <a href="#">FAQ</a>
       </nav>
-      <p role="contentinfo">Copyright © 2014 Voyager, LLC</p>
+      <p role="contentinfo" class="copyright">Copyright © 2014 Voyager, LLC</p>
     </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
