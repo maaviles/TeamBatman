@@ -67,12 +67,13 @@ p {
 
 button {
   padding: .45em 1em;
+  margin: 0 .45em;
   border: 2px solid;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0);
   color: rgba(0,0,0,0.7);
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 button.cta {
@@ -81,6 +82,7 @@ button.cta {
 
 button.cta:hover, button.cta:focus, button.cta:active {
   border-color: #319944;
+  outline: 0;
 }
 
 button.default {
@@ -89,14 +91,39 @@ button.default {
 
 button.default:hover, button.default:focus, button.default:active {
   border-color: #155B99;
+  outline: 0;
+}
+
+button.inverse {
+  border-color: #fff;
+  color: #fff;
+}
+
+button.inverse:hover, button.inverse:focus, button.inverse:active {
+  border-color: #ededed;
+  color: #ededed;
+  outline: 0;
 }
 
 button.link {
   border: none;
+  padding: 0;
 }
 
 button.link:hover, button.link:focus, button.link:active {
   color: #636363;
+  outline: 0;
+}
+
+button.link-inverse {
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+
+button.link-inverse:hover, button.link-inverse:focus, button.link-inverse:active {
+  color: #ededed;
+  outline: 0;
 }
 
 button.full-width {
@@ -106,13 +133,49 @@ button.full-width {
 }
 
 input {
-  padding: .4em 1em;
+  padding: .45em 1em;
   border-radius: 3px;
-  border: 2px solid rgba(0,0,0,0.5);
+  border: 2px solid #000;
+}
+
+input:focus {
+  outline: 0;
 }
 
 fieldset {
   border: 0;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(27,114,191,1);
+  border-bottom: 5px solid #2a5e8c;
+  z-index: 9;
+}
+
+.navbar h1, nav {
+  display: inline-block;
+}
+
+.navbar h1 {
+  color: #fff;
+  margin: 0;
+}
+
+nav {
+  float: right;
+}
+
+main {
+  margin-top: 70px;
+}
+
+figure img {
+  margin-bottom: 2em;
 }
 
 
@@ -126,6 +189,99 @@ fieldset {
 
 /* #Page Styles
 ================================================== */
+
+/* Home Page Styles ================================================== */
+.hero {
+  width: 100%;
+  height: 77vh;
+  background: -webkit-linear-gradient(-225deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/hero-1.jpg');
+  background: -moz-linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/hero-1.jpg');
+  background: linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/hero-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero h1 {
+  padding-top: 3em;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+
+.hero h1 span {
+  text-decoration: underline;
+}
+
+.hero-form {
+  margin: 4em auto;
+  width: 65vw;
+}
+
+.hero-input {
+  display: inline-block;
+  background-color: rgba(0,0,0,0);
+  border-color: #fff;
+  color: white;
+  width: calc(100% - 142px);
+}
+
+.hero-button {
+  display: inline-block;
+}
+
+.hero-input::-webkit-input-placeholder {
+    color: #f6f6f6;
+}
+.hero-input:-moz-placeholder {
+    /* FF 4-18 */
+    color: #f6f6f6;
+}
+.hero-input::-moz-placeholder {
+    /* FF 19+ */
+    color: #f6f6f6;
+}
+.hero-input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #f6f6f6;
+}
+
+.how-it-works {
+  margin-top: 6em;
+  text-align: center;
+}
+
+.how-it-works h1 {
+  margin: 1.5em;
+}
+
+.step-1, .step-2, .step-3 {
+  font-size: 6em;
+  color: #1b72bf;
+}
+
+.how-it-works figcaption {
+  padding: 1.5em;
+}
+
+.featured-expeditions {
+  margin-top: 6em;
+  text-align: center;
+}
+
+.featured-expeditions h1 {
+  margin: 1.5em;
+};
+
+.beer-tour {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+
+
+
 
 /* #Media Queries
 ================================================== */
@@ -148,20 +304,57 @@ fieldset {
 
 /* #Font-Face
 ================================================== */
-/*   This is the proper syntax for an @font-face file
-    Just create a "fonts" folder at the root,
-    copy your FontName into code below and remove
-    comment brackets */
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?jzx8xy');
+  src:url('../fonts/icomoon.eot?#iefixjzx8xy') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?jzx8xy') format('woff'),
+    url('../fonts/icomoon.ttf?jzx8xy') format('truetype'),
+    url('../fonts/icomoon.svg?jzx8xy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/*  @font-face {
-      font-family: 'FontName';
-      src: url('../fonts/FontName.eot');
-      src: url('../fonts/FontName.eot?iefix') format('eot'),
-           url('../fonts/FontName.woff') format('woff'),
-           url('../fonts/FontName.ttf') format('truetype'),
-           url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-      font-weight: normal;
-      font-style: normal; }
-*/
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-globe:before {
+  content: "\e600";
+}
+.icon-zoom:before {
+  content: "\e601";
+}
+.icon-location-outline:before {
+  content: "\e602";
+}
+.icon-map:before {
+  content: "\e603";
+}
+.icon-globe-outline:before {
+  content: "\e604";
+}
+.icon-directions:before {
+  content: "\e605";
+}
+.icon-thumbs-up:before {
+  content: "\e606";
+}
+.icon-binoculars:before {
+  content: "\e607";
+}
+.icon-happy:before {
+  content: "\e608";
+}
 
 
