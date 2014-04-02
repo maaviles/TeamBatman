@@ -285,8 +285,9 @@ figure img {
 /* #Expedition Page Styles
 ================================================== */
 /*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
-main.expo-main {
 
+
+main.expo-main {
  margin-top: 70px;
 }
 
@@ -294,6 +295,8 @@ main.expo-main {
 expo-list li {
 background: red;
 }
+
+
 
 
 /*Setting these <a> as display inline-block allows us to adjust padding and margin on all sides.  - Adding width 100% will allow it to fill its parent container, the <li>
@@ -379,3 +382,7 @@ background: red;
   content: "\e608";
 }
 
+
+header {
+
+}
