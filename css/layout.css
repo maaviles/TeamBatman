@@ -111,7 +111,7 @@ button.link {
 }
 
 button.link:hover, button.link:focus, button.link:active {
-  color: #636363;
+  color: #2393d9;
   outline: 0;
 }
 
@@ -130,6 +130,13 @@ button.full-width {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+button.big {
+  border-width: 4px;
+  font-size: 1.5em;
 }
 
 input {
@@ -154,20 +161,38 @@ header {
   top: 0;
   background-color: rgba(27,114,191,1);
   border-bottom: 5px solid #2a5e8c;
-  z-index: 9;
+  z-index: 1;
 }
 
 .navbar h1, nav {
   display: inline-block;
 }
 
+.navbar {
+  z-index: 10;
+}
+
 .navbar h1 {
   color: #fff;
   margin: 0;
+  z-index: 9999;
 }
 
 nav {
   float: right;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: rgba(27,114,191,1);
+  width: 100%;
+  margin-top: -8px;
+  padding: 0 15px;
+  z-index: 9;
+}
+
+.mobile-menu-trigger {
+  display: none;
 }
 
 main {
@@ -178,13 +203,82 @@ figure img {
   margin-bottom: 2em;
 }
 
-
-/* img {
-  height: auto;
-  width: 100%;
+.visible {
+  display: block;
 }
 
+.animated {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
+@-webkit-keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideOutUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes slideOutUp {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+}
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}
 
 
 /* #Page Styles
@@ -204,6 +298,8 @@ figure img {
 
 .hero h1 {
   padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
   margin: 0;
   text-align: center;
   color: #fff;
@@ -268,19 +364,51 @@ figure img {
 .featured-expeditions {
   margin-top: 6em;
   text-align: center;
+
 }
 
-.featured-expeditions h1 {
-  margin: 1.5em;
+.featured {
+  margin-top: 3em;
+  background-size: cover;
+  text-shadow: 0 0 3px #000;
+  color: #fff;
+  padding: 5px;
+  height: 200px;
+  line-height: 2.3em;
 }
 
-.beer-tour {
-  width: 300px;
-  height: 300px;
-  background-color: black;
+.featured h1 {
+  padding-top: 1em;
 }
 
+.featured:hover {
+  opacity: 0.9;
+}
 
+.featured-1 {
+  background-image: url('../img/beer-tour.jpg');
+}
+
+.featured-2 {
+  background-image: url('../img/bike-tour.jpg');
+}
+
+.featured-3 {
+  background-image: url('../img/space-needle.jpg');
+}
+
+.call-to-action {
+  margin: 6em;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+.copyright {
+  padding-top: 3em;
+}
 
 /* #Expedition Page Styles
 ================================================== */
@@ -295,8 +423,6 @@ main.expo-main {
 expo-list li {
 background: red;
 }
-
-
 
 
 /*Setting these <a> as display inline-block allows us to adjust padding and margin on all sides.  - Adding width 100% will allow it to fill its parent container, the <li>
@@ -315,16 +441,56 @@ background: red;
   @media only screen and (max-width: 959px) {}
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
-  @media only screen and (min-width: 768px) and (max-width: 959px) {}
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .hero h1 {
+      font-size: 2.3em;
+    }
+  }
 
   /* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 767px) {}
+  @media only screen and (max-width: 767px) {
+    nav {
+      display: none;
+    }
+
+    .mobile-menu-trigger {
+      display: inline-block;
+      float: right;
+      color: white;
+      font-size: 2em;
+      line-height: 70px;
+    }
+
+    .hero-form {
+      margin: 4em auto;
+    }
+
+    .hero-input {
+      width: 100%;
+    }
+
+    .hero-button {
+      display: none;
+    }
+
+    .hero {
+      height: 20em;
+    }
+  }
 
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-  @media only screen and (min-width: 480px) and (max-width: 767px) {}
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .hero h1 {
+      font-size: 1.8em;
+    }
+  }
 
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-  @media only screen and (max-width: 479px) {}
+  @media only screen and (max-width: 479px) {
+    .hero h1 {
+      font-size: 1.5em;
+    }
+  }
 
 
 /* #Font-Face
@@ -347,7 +513,6 @@ background: red;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -382,7 +547,6 @@ background: red;
   content: "\e608";
 }
 
-
-header {
-
+.icon-th-menu:before {
+  content: "\e609";
 }
