@@ -20,57 +20,58 @@
 
     <header>
       <div class="container">
-        <div class="sixteen columns clearfix">
-          <h1>Voyager</h1>
+        <div class="sixteen columns clearfix navbar">
+          <h1><span class="icon-directions"></span>Voyager</h1>
           <nav>
-            <button>Create New Expedition</button>
-            <button>Sign Up</button>
-            <button>Log In</button>
+            <button class="link-inverse">Design an Expedition</button>
+            <button class="link-inverse">Log In</button>
+            <button class="inverse">Sign Up</button>
           </nav>
         </div>
       </div>
     </header>
 
-    <main class="container">
+    <main>
 
-      <section class="sixteen columns clearfix"> <!-- hero unit -->
-        <h1>Go on a fun expedition.</h1>
-        <form>
+      <section class="hero"> <!-- hero unit -->
+        <h1>Go on a <span>secret bike tour</span>, <i>crafted by a local</i></h1>
+        <form class="hero-form">
           <fieldset>
-            <input type="search" placeholder="Where do you want to go?">
-            <button type="submit">Search</button>
+            <input class="hero-input" type="search" placeholder="What city do you want to explore?" autofocus>
+            <button class="hero-button inverse" type="submit">Search</button>
           </fieldset>
         </form>
       </section>
 
-      <article> <!-- how to use -->
+      <article class="how-it-works"> <!-- how to use -->
+        <h1>How It Works</h1>
         <ol class="container">
           <li class="one-third column">
             <figure> <!-- step 1 -->
-              <img src="http://placehold.it/200x200" alt="Step 1">
-              <figcaption>Step 1</figcaption>
+              <div class="step-1 icon-directions"></div>
+              <figcaption>Locals, just like you, design fun and exciting expeditions around their city</figcaption>
             </figure>
           </li>
           <li class="one-third column">
             <figure> <!-- step 2 -->
-              <img src="http://placehold.it/200x200" alt="Step 2">
-              <figcaption>Step 2</figcaption>
+              <div class="step-2 icon-zoom"></div>
+              <figcaption>Browse through 100's of expeditions and discover your next getaway</figcaption>
             </figure>
           </li>
           <li class="one-third column">
             <figure> <!-- step 3 -->
-              <img src="http://placehold.it/200x200" alt="Step 3">
-              <figcaption>Step 3</figcaption>
+              <div class="step-3 icon-map"></div>
+              <figcaption>Strap on your adventure hat, pack your map, and apply your sunscreen. You're ready to go!</figcaption>
             </figure>
           </li>
         </ol>
       </article>
 
-      <section class="container"> <!-- featured expeditions section -->
+      <section class="container featured-expeditions"> <!-- featured expeditions section -->
         <h1>Featured Expeditions</h1>
-        <article class="one-third column"> <!-- expedition 1 -->
-          <h1>Expedition 1</h1>
-          <p>Description of the expedition</p>
+        <article class="one-third column beer-tour"> <!-- expedition 1 -->
+          <h1>Beer Tour</h1>
+          <p>Go from brewery to brewery, stopping at fun parks along the way</p>
         </article>
         <article class="one-third column"> <!-- expedition 2 -->
           <h1>Expedition 1</h1>
@@ -81,7 +82,9 @@
           <p>Description of the expedition</p>
         </article>
       </section>
-      <button>Plan your Saturday today!</button>
+      <div style="text-align: center;">
+        <button class="default">Plan your Saturday today!</button>
+      </div>
     </main>
     <footer class="container">
       <nav class="sixteen columns">
