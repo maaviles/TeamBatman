@@ -445,9 +445,9 @@ margin-bottom: 0;
 }
 
 .expo-title {
-  background: -webkit-linear-gradient(-225deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('/img/beer-tour.jpg');
-  background: -moz-linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('/img/beer-tour.jpg');
-  background: linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('/img/beer-tour.jpg');
+  background: -webkit-linear-gradient(-225deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
+  background: -moz-linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
+  background: linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
