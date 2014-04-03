@@ -31,6 +31,22 @@
 
 
 
+
+/*Colors*/
+/*
+*Dark Blue - #061f40
+*#1b72bf
+*#2a5e8c
+#2393d9
+#404040
+#3ab851
+*/
+
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+
+
 /* #Site Styles
 ================================================== */
 *, *:before, *:after {-webkit-box-sizing: border-box;
@@ -205,9 +221,32 @@ main {
 figure img {
   margin-bottom: 2em;
 }
-
 .visible {
   display: block;
+}
+
+button.full-width {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+input {
+  padding: .4em 1em;
+  border-radius: 3px;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+
+fieldset {
+  border: 0;
+}
+
+footer {
+  height: 10em;
+}
+
+footer nav, footer p {
+  margin: 0 auto;
 }
 
 .animated {
@@ -413,6 +452,7 @@ footer {
   padding-top: 3em;
 }
 
+<<<<<<< HEAD
 /* #Expedition Page Styles
 ================================================== */
 /*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
@@ -492,6 +532,7 @@ text-align: center;
 margin: 1em;
 }
 
+<<<<<<< HEAD
 /* Filter Options*/
 
 legend {
@@ -532,6 +573,74 @@ select {
 }
 
 
+=======
+/* Expedition Details Page
+==================================================== */
+
+.detailsHeader {
+  width: 100%;
+  height: 175px;
+  background-color: grey;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../img/expo-details-skateboard.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.filter {
+  text-align: center;
+  background-color: #1b72bf;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+}
+
+.filter li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pul {
+  text-align: center;
+}
+
+.poiList .pul {
+  border-bottom: 2px solid #2a5e8c;
+  padding-bottom: 30px;
+}
+
+.poiList .pul:last-child {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
+.pul img {
+  width: 100%;
+}
+
+.descList {
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  color: #2a5e8c;
+}
+
+.descList li {
+  display: inline;
+  padding: 0 3px;
+  line-height: 30px;
+}
+>>>>>>> e72661a1b18fe1bef44d94145f640f58d2cb9ce6
 
 /* ==========================================================================
    Helper classes from h5bp.com/u
@@ -580,18 +689,139 @@ select {
  * Hide visually and from screenreaders, but maintain layout
  */
 
+/* Expeditions Page
+========================================== */
+
+.expedition {
+  margin-top: 70px;
+}
+
+.expMain li {
+  list-style: none;
+}
+
+
+input[name="panel"] {
+  display: none;
+}
+
+label {
+  display: block;
+  padding: 0.8em;
+  width: 100%;
+  height: 1em;
+}
+
+.collapsible {
+  display: block;
+  padding: 0 1em;
+  width: 100%;
+}
+
+input[name='panel'] + .collapsible {
+  overflow: hidden;
+  height: 0;
+
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+input[name='panel']:checked + .collapsible {
+  overflow: auto;
+  height: 8em; /* needs a numeric value here to keep transition */
+}
+
 
 /* #Media Queries
 ================================================== */
 
-  /* Smaller than standard 960 (devices and browsers) */
-  @media only screen and (max-width: 959px) {}
+  /* Larger than standard 960 (devices and browsers) */
+  @media only screen and (min-width: 960px) {
+      .hero h1 {
+        font-size: 2.3em;
+      }
+
+      .detailsHeader {
+        height: 350px;
+        padding-top: 100px;
+      }
+
+      .detailsHeader h1 {
+        font-size: 3em;
+      }
+
+      .descList {
+        border-right: 1px solid #f0f0f0;
+        margin-top: 20px;
+      }
+
+      .descList li {
+        display: block;
+        text-align: left;
+        padding: 5px 0;
+        font-size: 1.3em;
+      }
+
+      .filter li {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 1.3em;
+      }
+
+      .pul p {
+        text-align: left;
+        font-size: 1.3em;
+        padding-top: 20px;
+      }
+
+      .filter {
+        margin-bottom: 30px;
+      }
+
+    }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .hero h1 {
       font-size: 2.3em;
     }
+
+    .detailsHeader {
+      height: 350px;
+      padding-top: 100px;
+    }
+
+    .detailsHeader h1 {
+      font-size: 3em;
+    }
+
+    .descList {
+      border-right: 1px solid #f0f0f0;
+      margin-top: 20px;
+    }
+
+    .descList li {
+      display: block;
+      text-align: left;
+      padding: 5px 0;
+      font-size: 1.3em;
+    }
+
+    .filter li {
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 1.3em;
+    }
+
+    .pul p {
+      text-align: left;
+      font-size: 1.3em;
+      padding-top: 20px;
+    }
+
   }
 
   /* All Mobile Sizes (devices and browser) */
@@ -666,6 +896,9 @@ select {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-th-menu:before {
+  content: "\e609";
+}
 .icon-globe:before {
   content: "\e600";
 }
@@ -687,16 +920,27 @@ select {
 .icon-thumbs-up:before {
   content: "\e606";
 }
+.icon-books:before {
+  content: "\e60a";
+}
+.icon-tag:before {
+  content: "\e60b";
+}
+.icon-clock:before {
+  content: "\e60c";
+}
 .icon-binoculars:before {
   content: "\e607";
 }
+.icon-star:before {
+  content: "\e60d";
+}
 .icon-happy:before {
   content: "\e608";
+
 }
 
 .icon-th-menu:before {
   content: "\e609";
 }
-
-
 
