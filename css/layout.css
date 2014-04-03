@@ -590,6 +590,11 @@ margin: 1em;
   padding-bottom: 30px;
 }
 
+.poiList .pul:last-child {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
 .pul img {
   width: 100%;
 }
@@ -604,6 +609,8 @@ margin: 1em;
 
 .descList li {
   display: inline;
+  padding: 0 3px;
+  line-height: 30px;
 }
 
 /* ==========================================================================
@@ -652,7 +659,7 @@ margin: 1em;
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-=======
+
 /* Expeditions Page
 ========================================== */
 
@@ -697,20 +704,95 @@ input[name='panel']:checked + .collapsible {
   overflow: auto;
   height: 8em; /* needs a numeric value here to keep transition */
 }
->>>>>>> master
 
 
 /* #Media Queries
 ================================================== */
 
-  /* Smaller than standard 960 (devices and browsers) */
-  @media only screen and (max-width: 959px) {}
+  /* Larger than standard 960 (devices and browsers) */
+  @media only screen and (min-width: 960px) {
+      .hero h1 {
+        font-size: 2.3em;
+      }
+
+      .detailsHeader {
+        height: 350px;
+        padding-top: 100px;
+      }
+
+      .detailsHeader h1 {
+        font-size: 3em;
+      }
+
+      .descList {
+        border-right: 1px solid #f0f0f0;
+        margin-top: 20px;
+      }
+
+      .descList li {
+        display: block;
+        text-align: left;
+        padding: 5px 0;
+        font-size: 1.3em;
+      }
+
+      .filter li {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 1.3em;
+      }
+
+      .pul p {
+        text-align: left;
+        font-size: 1.3em;
+        padding-top: 20px;
+      }
+
+      .filter {
+        margin-bottom: 30px;
+      }
+
+    }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .hero h1 {
       font-size: 2.3em;
     }
+
+    .detailsHeader {
+      height: 350px;
+      padding-top: 100px;
+    }
+
+    .detailsHeader h1 {
+      font-size: 3em;
+    }
+
+    .descList {
+      border-right: 1px solid #f0f0f0;
+      margin-top: 20px;
+    }
+
+    .descList li {
+      display: block;
+      text-align: left;
+      padding: 5px 0;
+      font-size: 1.3em;
+    }
+
+    .filter li {
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 1.3em;
+    }
+
+    .pul p {
+      text-align: left;
+      font-size: 1.3em;
+      padding-top: 20px;
+    }
+
   }
 
   /* All Mobile Sizes (devices and browser) */
