@@ -14,12 +14,41 @@
         <link rel="stylesheet" href="http://i.icomoon.io/public/temp/70f9307e71/UntitledProject1/style.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
+  </head>
 
+<body>
         <!-- Primary Page Layout
   ================================================== -->
 
+<<<<<<< HEAD
+<header>
+  <div class="container">
+    <div class="sixteen columns clearfix navbar">
+      <h1><span class="icon-directions"></span>Voyager</h1>
+      <button id="mobile-menu-trigger" class="link mobile-menu-trigger icon-th-menu"></button>
+      <nav>
+        <button class="link-inverse">Design an Expedition</button>
+        <button class="link-inverse">Log In</button>
+        <button class="inverse">Sign Up</button>
+      </nav>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu slideOutUp"> <!-- mobile menu -->
+    <button class="link-inverse full-width">Design an Expedition</button>
+    <button class="link-inverse full-width">Log In</button>
+    <button class="inverse full-width">Sign Up</button>
+  </nav>
+</header>
+
+<!-- Removed container class form <main class="expo-main"> to make lists full width on mobile while testing things -->
+<main class="expo-main">
+          <!--
+        <menu type="toolbar" class="four columns">  filtering of expeditions
+          <menu label="category">
+            <button>Cat 1</button>
+            <button>Cat 2</button>
+            <button>Cat 3</button>
+=======
       <header>
         <div class="container">
           <div class="three columns navbar">
@@ -45,7 +74,7 @@
         <div class="container">
 
         <menu type="toolbar" class="four columns expFilter"> 
-          <!-- filtering of expeditions -->
+
 
           <label for="panel_1">Category</label>
           <input type="radio" name="panel" id="panel_1">
@@ -53,6 +82,7 @@
             <button class="default">Cat 1</button>
             <button class="default">Cat 2</button>
             <button class="default">Cat 3</button>
+>>>>>>> master
           </menu>
 
           <label for="panel_2">Price</label>
@@ -71,7 +101,68 @@
             <button class="default">Range 3</button>
           </menu>
         </menu>
+          -->
 
+<section class="sixteen columns expo-list">
+  <h1>Expeditions</h1>
+   <!-- section containing all expeditions -->
+  <ul class="clearfix">
+    <li class="expo-title">
+      <article >
+        <a href="expedition-details.html"><h1>Craft Brewery Tour</h1></a>
+        <div class="expo-bio">
+        <p>Love craft beer? I mean <em>really</em> love craft beer? Then this is the tour for you. </p>
+        <ul class="expo-info">
+           <li>Price: <span> $80</span></li>
+           <li>Category: <span> Booze</span></li>
+          <li>Distance: <span> 12 miles</span></li>
+        </ul>
+        </div>
+      </article>
+    </li>
+    <li class="expo-title">
+      <article >
+        <a href="expedition-details.html"><h1>Craft Brewery Tour</h1></a>
+        <div class="expo-bio">
+        <p>Love craft beer? I mean <em>really</em> love craft beer? Then this is the tour for you. </p>
+        <ul class="expo-info">
+           <li>Price: <span> $80</span></li>
+           <li>Category: <span> Booze</span></li>
+          <li>Distance: <span> 12 miles</span></li>
+        </ul>
+        </div>
+      </article>
+    </li>
+  <li class="expo-title">
+      <article >
+        <a href="expedition-details.html"><h1>Craft Brewery Tour</h1></a>
+        <div class="expo-bio">
+        <p>Love craft beer? I mean <em>really</em> love craft beer? Then this is the tour for you. </p>
+        <ul class="expo-info">
+           <li>Price: <span> $80</span></li>
+           <li>Category: <span> Booze</span></li>
+          <li>Distance: <span> 12 miles</span></li>
+        </ul>
+        </div>
+      </article>
+    </li>
+  </ul>
+  <!-- maybe add pagination? -->
+  <p>Don't see any you like? <button class="cta">Make your own!</button></p>
+</section>
+</main>
+
+<<<<<<< HEAD
+<footer class="container">
+  <nav class="sixteen columns">
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Press</a>
+    <a href="#">FAQ</a>
+  </nav>
+  <p role="contentinfo">Copyright © 2014 Voyager, LLC</p>
+</footer>
+=======
         <section class="twelve columns expMain">
           <h1 class="expHeader">Expeditions</h1>
            <!-- section containing all expeditions -->
@@ -285,11 +376,12 @@
         </nav>
         <p role="contentinfo" class="sixteen columns">Copyright © 2014 Voyager, LLC</p>
       </footer>
+>>>>>>> master
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
     </body>
 </html>
