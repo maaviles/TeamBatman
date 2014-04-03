@@ -83,20 +83,13 @@ p {
 
 button {
   padding: .45em 1em;
-<<<<<<< HEAD
-=======
   margin: 0 .45em;
->>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
   border: 2px solid;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0);
   color: rgba(0,0,0,0.7);
   text-align: center;
-<<<<<<< HEAD
-  font-weight: 600;
-=======
   font-weight: 500;
->>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.cta {
@@ -105,10 +98,7 @@ button.cta {
 
 button.cta:hover, button.cta:focus, button.cta:active {
   border-color: #319944;
-<<<<<<< HEAD
-=======
   outline: 0;
->>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.default {
@@ -117,8 +107,6 @@ button.default {
 
 button.default:hover, button.default:focus, button.default:active {
   border-color: #155B99;
-<<<<<<< HEAD
-=======
   outline: 0;
 }
 
@@ -131,21 +119,15 @@ button.inverse:hover, button.inverse:focus, button.inverse:active {
   border-color: #ededed;
   color: #ededed;
   outline: 0;
->>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.link {
   border: none;
-<<<<<<< HEAD
-=======
   padding: 0;
->>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.link:hover, button.link:focus, button.link:active {
   color: #636363;
-<<<<<<< HEAD
-=======
   outline: 0;
 }
 
@@ -210,7 +192,6 @@ main {
 
 figure img {
   margin-bottom: 2em;
->>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.full-width {
@@ -339,11 +320,7 @@ footer nav, footer p {
 }
 
 
-
->>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
-
-
-/* Expeditions Page 
+/* Expeditions Page
 ========================================== */
 
 .expedition {
@@ -410,23 +387,6 @@ input[name='panel']:checked + .collapsible {
 
 /* #Font-Face
 ================================================== */
-<<<<<<< HEAD
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
-
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
-=======
 @font-face {
   font-family: 'icomoon';
   src:url('../fonts/icomoon.eot?jzx8xy');
@@ -479,6 +439,4 @@ input[name='panel']:checked + .collapsible {
 .icon-happy:before {
   content: "\e608";
 }
-
->>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 
