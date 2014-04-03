@@ -30,6 +30,22 @@
 
 
 
+
+/*Colors*/
+/*
+*Dark Blue - #061f40
+*#1b72bf
+*#2a5e8c
+#2393d9
+#404040
+#3ab851
+*/
+
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+
+
 /* #Site Styles
 ================================================== */
 *, *:before, *:after {-webkit-box-sizing: border-box;
@@ -67,13 +83,20 @@ p {
 
 button {
   padding: .45em 1em;
+<<<<<<< HEAD
+=======
   margin: 0 .45em;
+>>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
   border: 2px solid;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0);
   color: rgba(0,0,0,0.7);
   text-align: center;
+<<<<<<< HEAD
+  font-weight: 600;
+=======
   font-weight: 500;
+>>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.cta {
@@ -82,7 +105,10 @@ button.cta {
 
 button.cta:hover, button.cta:focus, button.cta:active {
   border-color: #319944;
+<<<<<<< HEAD
+=======
   outline: 0;
+>>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.default {
@@ -91,6 +117,8 @@ button.default {
 
 button.default:hover, button.default:focus, button.default:active {
   border-color: #155B99;
+<<<<<<< HEAD
+=======
   outline: 0;
 }
 
@@ -103,15 +131,21 @@ button.inverse:hover, button.inverse:focus, button.inverse:active {
   border-color: #ededed;
   color: #ededed;
   outline: 0;
+>>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.link {
   border: none;
+<<<<<<< HEAD
+=======
   padding: 0;
+>>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
 button.link:hover, button.link:focus, button.link:active {
   color: #636363;
+<<<<<<< HEAD
+=======
   outline: 0;
 }
 
@@ -176,8 +210,32 @@ main {
 
 figure img {
   margin-bottom: 2em;
+>>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 }
 
+button.full-width {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+input {
+  padding: .4em 1em;
+  border-radius: 3px;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+
+fieldset {
+  border: 0;
+}
+
+footer {
+	height: 10em;
+}
+
+footer nav, footer p {
+	margin: 0 auto;
+}
 
 /* img {
   height: auto;
@@ -282,6 +340,54 @@ figure img {
 
 
 
+>>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
+
+
+/* Expeditions Page 
+========================================== */
+
+.expedition {
+  margin-top: 70px;
+}
+
+.expMain li {
+  list-style: none;
+}
+
+
+input[name="panel"] {
+  display: none;
+}
+
+label {
+  display: block;
+  padding: 0.8em;
+  width: 100%;
+  height: 1em;
+}
+
+.collapsible {
+  display: block;
+  padding: 0 1em;
+  width: 100%;
+}
+
+input[name='panel'] + .collapsible {
+  overflow: hidden;
+  height: 0;
+
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+input[name='panel']:checked + .collapsible {
+  overflow: auto;
+  height: 8em; /* needs a numeric value here to keep transition */
+}
+
 
 /* #Media Queries
 ================================================== */
@@ -304,6 +410,23 @@ figure img {
 
 /* #Font-Face
 ================================================== */
+<<<<<<< HEAD
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+=======
 @font-face {
   font-family: 'icomoon';
   src:url('../fonts/icomoon.eot?jzx8xy');
@@ -357,4 +480,5 @@ figure img {
   content: "\e608";
 }
 
+>>>>>>> f1a9a885de3d59870f6e74242b828e4b8ec23f8d
 
