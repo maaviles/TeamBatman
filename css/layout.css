@@ -441,9 +441,7 @@ margin-bottom: 0;
 }
 
 .expo-title {
-  background: -webkit-linear-gradient(-225deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
-  background: -moz-linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
-  background: linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
+  background: url('../img/beer-tour.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -507,8 +505,9 @@ legend {
 
 .filter{
 
-display:inline-block;
-width: 6em;
+width: 100%;
+  margin: .1em 0;
+  padding: 1em 0;
 
 }
 
@@ -526,7 +525,10 @@ display: none;
 
 select {
   width: 100%;
-  border: 2px #2a5e8c solid;
+  border: 1px #2a5e8c solid;
+  font-size: 1.5em;
+/*  -webkit-appearance: none;*/
+
 }
 
 

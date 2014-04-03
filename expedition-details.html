@@ -20,106 +20,112 @@
 
       <header>
         <div class="container">
-        <div class="sixteen columns clearfix">
-          <h1>Voyager</h1>
-          <nav>
-            <form>
-              <fieldset>
-                <input type="search" placeholder="Where do you want to go?">
-                <button type="submit">Search</button>
-              </fieldset>
-            </form>
-            <button>Create New Expedition</button>
-            <button>Sign Up</button>
-            <button>Log In</button>
-         </nav>
+          <div class="sixteen columns clearfix navbar">
+            <h1><span class="icon-directions"></span>Voyager</h1>
+            <button id="mobile-menu-trigger" class="link mobile-menu-trigger icon-th-menu"></button>
+            <nav>
+              <button class="link-inverse">Design an Expedition</button>
+              <button class="link-inverse">Log In</button>
+              <button class="inverse">Sign Up</button>
+            </nav>
+          </div>
         </div>
-        </div>
+        <nav id="mobile-menu" class="mobile-menu slideOutUp"> <!-- mobile menu -->
+          <button class="link-inverse full-width">Design an Expedition</button>
+          <button class="link-inverse full-width">Log In</button>
+          <button class="inverse full-width">Sign Up</button>
+        </nav>
       </header>
 
-      <main class="container">
-<!-- possibly chainge main to <article>? -->
+      <main>
+        <article class="poiMain">
 
-        <h1>Title of Expedition</h1>
-        <p>This is a description of the expedition</p>
-
-        <section>
-          <ul>
-            <li>Category</li>
-            <li>Price</li>
-            <li>Duration</li>
-            <li>Rating</li>
-          </ul>
+        <section class="detailsHeader">
+          <h1>Title of Expedition</h1>
+          <p>This is a description of the expedition</p>
         </section>
 
-        <ul class="container">
-          <li role="button" class="sixteen columns clearfix">
+        <ul class="filter">
+          <li class="icon-books"> Booze</li>
+          <li class="icon-tag"> $25</li>
+          <li class="icon-clock"> 3 hrs</li>
+          <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
+        </ul>
+
+        <ul class="container poiList">
+
+          <li role="button" class="sixteen columns pul">
             <div class="sixteen columns">
-              <h1>Point of Interest 1</h1>
-              <img src="http://placehold.it/100X100" alt="poi1">
+              <h1>King's Hardware</h1>
+              <img src="http://placehold.it/300X100" alt="poi1">
             </div>
             <div class="container">
-              <p class="twelve columns">Description of the point of interest</p>
-              <ul class="four columns">
-                <li>Category</li>
-                <li>Price</li>
-                <li>Duration</li>
+              <ul class="four columns descList">
+                <li>Drunk | </li>
+                <li>$15 | </li>
+                <li>45 minutes | </li>
                 <li>Rating</li>
               </ul>
+              <p class="twelve columns">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
             </div>
           </li>
 
-          <li role="button" class="sixteen columns clearfix">
+          <li role="button" class="sixteen columns pul">
             <div class="sixteen columns">
-              <h1>Point of Interest 1</h1>
-              <img src="http://placehold.it/100X100" alt="poi1">
+              <h1>Percy's Co</h1>
+              <img src="http://placehold.it/300X100" alt="poi1">
             </div>
             <div class="container">
-              <p class="twelve columns">Description of the point of interest</p>
-              <ul class="four columns">
-                <li>Category</li>
-                <li>Price</li>
-                <li>Duration</li>
+              <ul class="four columns descList">
+                <li>Drunk | </li>
+                <li>$30 | </li>
+                <li>45 minutes | </li>
                 <li>Rating</li>
               </ul>
+              <p class="twelve columns">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
             </div>
           </li>
-          <li role="button" class="sixteen columns clearfix">
+
+          <li role="button" class="sixteen columns pul">
             <div class="sixteen columns">
-              <h1>Point of Interest 1</h1>
-              <img src="http://placehold.it/100X100" alt="poi1">
+              <h1>Bitterroot BBQ</h1>
+              <img src="http://placehold.it/300X100" alt="poi1">
             </div>
             <div class="container">
-              <p class="twelve columns">Description of the point of interest</p>
-              <ul class="four columns">
-                <li>Category</li>
-                <li>Price</li>
-                <li>Duration</li>
+              <ul class="four columns descList">
+                <li>Drunk | </li>
+                <li>$25 | </li>
+                <li>45 minutes | </li>
                 <li>Rating</li>
               </ul>
+              <p class="twelve columns">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
             </div>
           </li>
-          <li role="button" class="sixteen columns clearfix">
+
+          <li role="button" class="sixteen columns pul">
             <div class="sixteen columns">
-              <h1>Point of Interest 1</h1>
-              <img src="http://placehold.it/100X100" alt="poi1">
+              <h1>Hot Cakes</h1>
+              <img src="http://placehold.it/300X100" alt="poi1">
             </div>
             <div class="container">
-              <p class="twelve columns">Description of the point of interest</p>
-              <ul class="four columns">
-                <li>Category</li>
-                <li>Price</li>
-                <li>Duration</li>
+              <ul class="four columns descList">
+                <li>Dessert | </li>
+                <li>$25 | </li>
+                <li>45 minutes | </li>
                 <li>Rating</li>
               </ul>
+              <p class="twelve columns">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
             </div>
           </li>
+
         </ul>
 
         <div id="map-container">
         </div>
+
+      </div>
       </main>
-      
+
       <footer class="container">
         <nav class="sixteen columns">
           <a href="#">About Us</a>
