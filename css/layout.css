@@ -11,7 +11,7 @@
 ==================================================
   #Site Styles
   #Page Styles
-  #Heler Classes
+  #Helper Classes
   #Media Queries
   #Font-Face */
 
@@ -170,12 +170,8 @@ header {
 }
 
 .navbar {
-<<<<<<< HEAD
-  z-index: 10;
-=======
   z-index: 9999;
 
->>>>>>> expo2-css
 }
 
 .navbar h1 {
@@ -203,19 +199,6 @@ nav {
   display: none;
 }
 
-.mobile-menu {
-  display: none;
-  background-color: rgba(27,114,191,1);
-  width: 100%;
-  margin-top: -8px;
-  padding: 0 15px;
-  z-index: 9;
-}
-
-.mobile-menu-trigger {
-  display: none;
-}
-
 main {
   margin-top: 70px;
 }
@@ -226,78 +209,6 @@ figure img {
 
 .visible {
   display: block;
-<<<<<<< HEAD
-}
-
-.animated {
-  -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes slideInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    -ms-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-.slideInDown {
-  -webkit-animation-name: slideInDown;
-  animation-name: slideInDown;
-}
-
-@-webkit-keyframes slideOutUp {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-}
-
-@keyframes slideOutUp {
-  0% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    -ms-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-}
-
-=======
 
 }
 
@@ -369,7 +280,6 @@ figure img {
   }
 }
 
->>>>>>> expo2-css
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
@@ -487,21 +397,6 @@ figure img {
 .featured-2 {
   background-image: url('../img/bike-tour.jpg');
 }
-<<<<<<< HEAD
-
-.featured-3 {
-  background-image: url('../img/space-needle.jpg');
-}
-
-.call-to-action {
-  margin: 6em;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-}
-=======
 
 .featured-3 {
   background-image: url('../img/space-needle.jpg');
@@ -658,35 +553,7 @@ margin: 1em;
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
->>>>>>> expo2-css
 
-.copyright {
-  padding-top: 3em;
-}
-
-/* #Expedition Page Styles
-================================================== */
-/*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
-
-
-main.expo-main {
- margin-top: 70px;
-}
-
-.expo-list ul,
-expo-list li {
-background: red;
-}
-
-
-/*Setting these <a> as display inline-block allows us to adjust padding and margin on all sides.  - Adding width 100% will allow it to fill its parent container, the <li>
- * See expo-anchors-before and after images in screenshots folder
- * */
-.expo-list a {
-  display: inline-block;
-  width: 100%;
-
-}
 
 /* #Media Queries
 ================================================== */
@@ -804,7 +671,4 @@ background: red;
 .icon-th-menu:before {
   content: "\e609";
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> expo2-css
