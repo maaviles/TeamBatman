@@ -39,8 +39,9 @@
 
 <!-- Removed container class form <main class="expo-main"> to make lists full width on mobile while testing things -->
 <main class="expo-main">
-          <!--
+<!--
         <menu type="toolbar" class="four columns">  filtering of expeditions
+
           <menu label="category">
             <button>Cat 1</button>
             <button>Cat 2</button>
@@ -57,7 +58,49 @@
             <button>Range 3</button>
           </menu>
         </menu>
-          -->
+-->
+
+<form action="#" class="filter-wrap">
+  <fieldset>
+    <legend>Chose your own Adventure</legend>
+  <div class="filter">
+    <p>Price</p>
+    <label for="select-price">Price:</label>
+    <select name="select-price" id="select-price">
+      <option value="Choice 1">Free</option>
+      <option value="Choice 2">$0 - $20</option>
+      <option value="Choice 3">$20 - $50</option>
+      <option value="Choice 4">$50 - $75</option>
+      <option value="Choice 5">$75 - $100</option>
+      <option value="Choice 6">$100 - $200</option>
+    </select>
+  </div>
+    <div class="filter">
+    <p>Category</p>
+    <label for="select-category">Category:</label>
+    <select name="select-category" id="select-category">
+      <option value="Choice 1">Food</option>
+      <option value="Choice 2">Outdoors</option>
+      <option value="Choice 4">Art</option>
+      <option value="Choice 5">Music</option>
+      <option value="Choice 6">Books</option>
+    </select>
+  </div>
+    <div class="filter">
+    <p>Distance</p>
+    <label for="select-distance">Distance:</label>
+    <select name="select-distance" id="select-distance">
+      <option value="Choice 1">0 - 1 miles</option>
+      <option value="Choice 2">2 - 3 miles</option>
+      <option value="Choice 3">3 - 5 miles</option>
+      <option value="Choice 4">5 - 10 miles</option>
+      <option value="Choice 5">10 - 15 miles</option>
+      <option value="Choice 6">15 - 20 miles</option>
+    </select>
+  </div>
+  </fieldset>
+</form>
+
 <section class="sixteen columns expo-list">
   <h1>Expeditions</h1>
    <!-- section containing all expeditions -->

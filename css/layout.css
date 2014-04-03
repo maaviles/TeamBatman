@@ -67,8 +67,8 @@ p {
 }
 
 button {
-  padding: .45em 1em;
   margin: 0 .45em;
+  padding: .45em 1em;
   border: 2px solid;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0);
@@ -82,8 +82,8 @@ button.cta {
 }
 
 button.cta:hover, button.cta:focus, button.cta:active {
-  border-color: #319944;
   outline: 0;
+  border-color: #319944;
 }
 
 button.default {
@@ -91,8 +91,8 @@ button.default {
 }
 
 button.default:hover, button.default:focus, button.default:active {
-  border-color: #155B99;
   outline: 0;
+  border-color: #155B99;
 }
 
 button.inverse {
@@ -101,38 +101,38 @@ button.inverse {
 }
 
 button.inverse:hover, button.inverse:focus, button.inverse:active {
+  outline: 0;
   border-color: #ededed;
   color: #ededed;
-  outline: 0;
 }
 
 button.link {
-  border: none;
   padding: 0;
+  border: none;
 }
 
 button.link:hover, button.link:focus, button.link:active {
-  color: #2393d9;
   outline: 0;
+  color: #2393d9;
 }
 
 button.link-inverse {
+  padding: 0;
   border: none;
   color: #fff;
-  padding: 0;
 }
 
 button.link-inverse:hover, button.link-inverse:focus, button.link-inverse:active {
-  color: #ededed;
   outline: 0;
+  color: #ededed;
 }
 
 button.full-width {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
 }
 
 button.big {
@@ -142,8 +142,8 @@ button.big {
 
 input {
   padding: .45em 1em;
-  border-radius: 3px;
   border: 2px solid #000;
+  border-radius: 3px;
 }
 
 input:focus {
@@ -155,44 +155,43 @@ fieldset {
 }
 
 header {
-  width: 100%;
-  height: 70px;
-  line-height: 70px;
   position: fixed;
   top: 0;
-  background-color: rgba(27,114,191,1);
-  border-bottom: 5px solid #2a5e8c;
   z-index: 1;
+  width: 100%;
+  height: 70px;
+  border-bottom: 5px solid #2a5e8c;
+  background-color: rgba(27,114,191,1);
+  line-height: 70px;
 }
 
-.navbar h1, nav {
+.navbar h1,
+nav {
   display: inline-block;
 }
 
 .navbar {
   z-index: 9999;
-
 }
 
 .navbar h1 {
-  color: #fff;
-  margin: 0;
   z-index: 9999;
+  margin: 0;
+  color: #fff;
 }
 
 nav {
   float: right;
-
 }
 
 .mobile-menu {
+  position: absolute;
+  z-index: 10;
   display: none;
-  background-color: rgba(27,114,191,1);
-  width: 100%;
   margin-top: -8px;
   padding: 0 15px;
-  z-index: 0;
-  position: absolute;
+  width: 100%;
+  background-color: rgba(27,114,191,1);
 }
 
 .mobile-menu-trigger {
@@ -209,12 +208,12 @@ figure img {
 
 .visible {
   display: block;
-
 }
 
 .animated {
   -webkit-animation-duration: 0.7s;
   animation-duration: 0.7s;
+
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -296,18 +295,18 @@ figure img {
   background: -webkit-linear-gradient(-225deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/hero-1.jpg');
   background: -moz-linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/hero-1.jpg');
   background: linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/hero-1.jpg');
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero h1 {
-  padding-top: 3em;
-  padding-left: 1em;
-  padding-right: 1em;
   margin: 0;
-  text-align: center;
+  padding-top: 3em;
+  padding-right: 1em;
+  padding-left: 1em;
   color: #fff;
+  text-align: center;
   font-size: 3em;
 }
 
@@ -322,10 +321,10 @@ figure img {
 
 .hero-input {
   display: inline-block;
-  background-color: rgba(0,0,0,0);
-  border-color: #fff;
-  color: white;
   width: calc(100% - 142px);
+  border-color: #fff;
+  background-color: rgba(0,0,0,0);
+  color: white;
 }
 
 .hero-button {
@@ -358,8 +357,8 @@ figure img {
 }
 
 .step-1, .step-2, .step-3 {
-  font-size: 6em;
   color: #1b72bf;
+  font-size: 6em;
 }
 
 .how-it-works figcaption {
@@ -369,16 +368,15 @@ figure img {
 .featured-expeditions {
   margin-top: 6em;
   text-align: center;
-
 }
 
 .featured {
   margin-top: 3em;
-  background-size: cover;
-  text-shadow: 0 0 3px #000;
-  color: #fff;
   padding: 5px;
   height: 200px;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
   line-height: 2.3em;
 }
 
@@ -428,14 +426,12 @@ main.expo-main {
  * See expo-anchors-before and after images in screenshots folder
  * */
 .expo-main article {
-
 margin-bottom: .8em;
 }
 
 .expo-title  h1{
 margin-bottom: 0;
   text-align: center;
-
 }
 
 .expo-list a {
@@ -448,44 +444,37 @@ margin-bottom: 0;
   background: -webkit-linear-gradient(-225deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
   background: -moz-linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
   background: linear-gradient(315deg, rgba(27,114,191,0.75) 0, rgba(58,184,81,0.78) 100%), url('../img/beer-tour.jpg');
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+  background-repeat: no-repeat;
 }
 
 .expo-bio  {
-  color: #fff;
- background: rgba(0, 0, 0, 0.75);
 margin: 0;
 padding: 0;
-
+ background: rgba(0, 0, 0, 0.75);
+  color: #fff;
 }
 
 .expo-bio p {
+  margin-bottom: 0;
+  padding:  .5em;
+  text-align: left;
+  letter-spacing: .0275em;
   font-weight: 300;
   font-size: .9em;
   line-height: 1.4;
-  text-align: left;
-  padding:  .5em;
-  margin-bottom: 0;
-  letter-spacing: .0275em;
 }
-
 
 .expo-title ul{
-   font-size: .8em;
 background: #155b99;
-  line-height: 1.8;
    font-weight: 100;
-
+   font-size: .8em;
+  line-height: 1.8;
 }
 .expo-info li{
-
  display: inline-block;
   padding:  0 .5em;
-
-
 }
 
 .expo-info li:last-child {
@@ -493,7 +482,6 @@ background: #155b99;
 }
 
 .expo-info span {
-
   font-size: 1em;
 }
 
@@ -505,6 +493,42 @@ text-align: center;
 .expo-list button {
 margin: 1em;
 }
+
+/* Filter Options*/
+
+legend {
+  font-size: 1.4em;
+}
+
+.filter-wrap {
+    text-align: center;
+  padding-top: 1.5em;
+}
+
+.filter{
+
+display:inline-block;
+width: 6em;
+
+}
+
+.filter > p {
+/*  padding: 0;*/
+/*  margin:  0;*/
+line-height: 1;
+
+}
+
+label {
+display: none;
+
+}
+
+select {
+  width: 100%;
+  border: 2px #2a5e8c solid;
+}
+
 
 
 /* ==========================================================================
@@ -525,14 +549,14 @@ margin: 1em;
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
     width: 1px;
+    height: 1px;
+    border: 0;
 }
 
 /*
@@ -542,12 +566,12 @@ margin: 1em;
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
     position: static;
+    overflow: visible;
+    clip: auto;
+    margin: 0;
     width: auto;
+    height: auto;
 }
 
 /*
@@ -617,24 +641,24 @@ margin: 1em;
 /* #Font-Face
 ================================================== */
 @font-face {
+  font-weight: normal;
+  font-style: normal;
   font-family: 'icomoon';
   src:url('../fonts/icomoon.eot?jzx8xy');
   src:url('../fonts/icomoon.eot?#iefixjzx8xy') format('embedded-opentype'),
     url('../fonts/icomoon.woff?jzx8xy') format('woff'),
     url('../fonts/icomoon.ttf?jzx8xy') format('truetype'),
     url('../fonts/icomoon.svg?jzx8xy#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
   text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'icomoon';
 
+  speak: none;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -671,4 +695,6 @@ margin: 1em;
 .icon-th-menu:before {
   content: "\e609";
 }
+
+
 
