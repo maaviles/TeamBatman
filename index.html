@@ -40,11 +40,10 @@
     <main>
 
       <section class="hero"> <!-- hero unit -->
-        <h1>Go on a <span>secret bike tour</span>, <i>crafted by a local</i></h1>
-        <form class="hero-form">
+        <h1>Go on a <span id="word-rotate">secret bike tour</span>, <i>crafted by a local</i></h1>
+        <form class="hero-form" id="hero-form">
           <fieldset>
-            <input class="hero-input" type="search" placeholder="Enter a city" required autofocus>
-            <a href="expeditions.html"><button class="hero-button inverse" type="submit">Search</button></a>
+            <input id="hero-search" class="hero-input" type="search" placeholder="Search by city" required autofocus>
           </fieldset>
         </form>
       </section>
@@ -85,12 +84,9 @@
           <h1>Space Needle Tour</h1>
         </a>
       </section>
-      <div class="toExpoPage">
-        <a href="expeditions.html"><button class="big default">See Other Expeditions</button></a>
-      </div>
+
       <div class="call-to-action">
-        <h1>Don't see one you like?</h1>
-        <button class="big default">Plan your Saturday today!</button>
+        <button class="big default" onClick="window.location = 'expeditions.html';">Plan your Saturday today!</button>
       </div>
     </main>
     <footer class="container">
