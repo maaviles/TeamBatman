@@ -31,9 +31,9 @@
 
 /*Colors*/
 /*
-#061f40
-#1b72bf
-#2a5e8c
+*Dark Blue - #061f40
+*#1b72bf
+*#2a5e8c
 #2393d9
 #404040
 #3ab851
@@ -394,7 +394,6 @@ footer nav, footer p {
   color: #1b72bf;
   font-size: 6em;
 }
-
 .how-it-works figcaption {
   padding: 1.5em;
 }
@@ -404,9 +403,13 @@ footer nav, footer p {
   text-align: center;
 }
 
+/*Not sure why but the padding: 5px on this was forcing the the last
+ * featured item to drop down when viewing on the hosted version, but not in local viewing??
+ * Seems likely I have CSS somewhere that messed this up? - Chris
+ * */
 .featured {
   margin-top: 3em;
-  padding: 5px;
+/*padding: 5px;*/
   height: 200px;
   background-size: cover;
   color: #fff;
@@ -453,21 +456,30 @@ footer {
 /*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
 
 
-main.expo-main {
+.expo-main {
  margin-top: 70px;
+
 }
+
 
 /*Setting these <a> as display inline-block allows us to adjust padding and margin on all sides.  - Adding width 100% will allow it to fill its parent container, the <li>
  * See expo-anchors-before and after images in screenshots folder
  * */
-.expo-main {
-/*margin-bottom: .8em;*/
-
-}
 
 .expo-title  h1{
-/*margin-bottom: 0;*/
+margin-bottom: 0;
 text-align: center;
+}
+
+.expo-title {
+  background: url('../img/beer-color-hdpi.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.expo-list > h1 {
+ text-align: center;
+  margin: .3em 0 .3em;
 }
 
 .expo-list a {
@@ -476,18 +488,17 @@ text-align: center;
   color: #fff;
 }
 
-.expo-title {
-  background: url('../img/beer-hdpi.jpg');
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: .75em;
+.expo-title ul{
+background: #155b99;
+  text-align: center;
+   font-weight: 100;
+   font-size: 1em;
+  line-height: 2.5;
 }
 
 .expo-bio  {
- background: rgba(0, 0, 0, 0.75);
+ background: rgba(0, 0, 0, 0.65);
   color: #fff;
-
 }
 
 .expo-bio p {
@@ -500,21 +511,9 @@ text-align: center;
   line-height: 1.4;
 }
 
-.expo-title ul{
-background: #155b99;
-   font-weight: 100;
-   font-size: 1em;
-  line-height: 2.5;
-  text-align: center;
-}
-
-article.expo-title{
-
-}
 .expo-info li{
  display: inline-block;
 padding: 0 2px;
-
 }
 
 .expo-info span {
@@ -523,13 +522,11 @@ margin: 0 0 0 4px;
 }
 
 .expo-info span.icon-star {
-padding: 0;
 margin: 0;
-
+padding: 0;
 }
 
 .expo-info li:last-child {
-
 }
 
 /*This is to target the <p> before the button*/
@@ -550,22 +547,23 @@ margin: 1.5em;
 
 
 legend {
-  font-size: 1.4em;
+  word-wrap: normal;
+  font-size: 1.3em;
+}
+
+.expo-main {
+  padding-top: 1em;
 }
 
 .sort-wrap {
-  padding-top: 1.5em;
+padding-top: 1em;
+  width: 100%;
     text-align: center;
 }
 
 .sort{
-  margin: .1em 0;
-  padding: 1em 0;
-width: 100%;
-}
-
-.sort > p {
-line-height: 1;
+margin: .5em 0;
+width: 100%
 }
 
 label {
@@ -575,8 +573,9 @@ label {
 select {
   width: 100%;
   border: 1px #2a5e8c solid;
-  font-size: 1.5em;
-
+  background: #319944;
+  color: #fff;
+  font-size: 1.3em;
   -webkit-appearance: none;
 }
 
@@ -789,6 +788,25 @@ input[name='panel']:checked + .collapsible {
       .filter {
         margin-bottom: 30px;
       }
+
+    legend {
+  word-wrap: normal;
+  font-size: 2em;
+}
+
+    .sort {
+      display: inline-block;
+      padding: 1em .3em;
+     width: 23%;
+    }
+
+    .sort:first-of-type {
+      margin-left: -.3em;
+    }
+
+    select {
+        font-size: 1.6em;
+    }
 
     }
 
