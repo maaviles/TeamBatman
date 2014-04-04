@@ -466,9 +466,23 @@ text-shadow: 0 0 3px #000;
 text-align: center;
 }
 
-.expo-title {
+.expo-title.beer {
   background: url('../img/beer-color-hdpi.jpg');
   background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.expo-title.bike {
+  background: url('../img/biking-color-hdpi.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.expo-title.swim {
+  background: url('../img/swimming-color-hdpi.jpg');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
