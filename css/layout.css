@@ -29,14 +29,11 @@
 /*Fonts*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
-
-
-
 /*Colors*/
 /*
-*Dark Blue - #061f40
-*#1b72bf
-*#2a5e8c
+#061f40
+#1b72bf
+#2a5e8c
 #2393d9
 #404040
 #3ab851
@@ -44,8 +41,6 @@
 
 /*Fonts*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-
-
 
 /* #Site Styles
 ================================================== */
@@ -428,7 +423,7 @@ footer nav, footer p {
 }
 
 .featured-1 {
-  background-image: url('../img/beer-tour.jpg');
+  background-image: url('../img/beer-color-hdpi.jpg');
 }
 
 .featured-2 {
@@ -465,13 +460,14 @@ main.expo-main {
 /*Setting these <a> as display inline-block allows us to adjust padding and margin on all sides.  - Adding width 100% will allow it to fill its parent container, the <li>
  * See expo-anchors-before and after images in screenshots folder
  * */
-.expo-main article {
-margin-bottom: .8em;
+.expo-main {
+/*margin-bottom: .8em;*/
+
 }
 
 .expo-title  h1{
-margin-bottom: 0;
-  text-align: center;
+/*margin-bottom: 0;*/
+text-align: center;
 }
 
 .expo-list a {
@@ -481,17 +477,17 @@ margin-bottom: 0;
 }
 
 .expo-title {
-  background: url('../img/beer-tour.jpg');
-  background-position: center;
+  background: url('../img/beer-hdpi.jpg');
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: .75em;
 }
 
 .expo-bio  {
-margin: 0;
-padding: 0;
  background: rgba(0, 0, 0, 0.75);
   color: #fff;
+
 }
 
 .expo-bio p {
@@ -508,30 +504,47 @@ padding: 0;
 background: #155b99;
    font-weight: 100;
    font-size: 1em;
-  line-height: 1.8;
+  line-height: 2.5;
+  text-align: center;
+}
+
+article.expo-title{
+
 }
 .expo-info li{
  display: inline-block;
-  padding:  0 .5em;
-}
+padding: 0 2px;
 
-.expo-info li:last-child {
-  margin-right: 0;
 }
 
 .expo-info span {
-  font-size: 1em;
+  display: inline-block;
+margin: 0 0 0 4px;
 }
 
+.expo-info span.icon-star {
+padding: 0;
+margin: 0;
+
+}
+
+.expo-info li:last-child {
+
+}
+
+/*This is to target the <p> before the button*/
 .expo-list p:last-child:last-of-type{
-  margin-top: 1.5em;
+margin-top: 1.5em;
 text-align: center;
 }
 
 .expo-list button {
-margin: 1em;
+margin: 1.5em;
 }
 
+.expo-tour div {
+  margin-bottom: .5em;
+}
 
 /* Sort Options*/
 
