@@ -21,3 +21,26 @@ $('#hero-form').submit(function() {
     }, 3500);
 
 })();
+
+
+function filter() {
+  $('#select-price').on('change', function() {
+    var price = $(this).val();
+
+    if (price != "Free") {
+      $('#free').hide();
+      console.log("price isn't free");
+    } else {
+      $('#free').show();
+      $('#25').hide();
+      $('#60').hide();
+    }
+
+  });
+};
+
+filter();
+
+
+
+
