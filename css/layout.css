@@ -491,7 +491,7 @@ text-align: center;
 .expo-title ul{
 background: #155b99;
   text-align: center;
-   font-weight: 100;
+
    font-size: 1em;
   line-height: 2.5;
 }
@@ -506,7 +506,7 @@ background: #155b99;
   padding:  .5em;
   text-align: left;
   letter-spacing: .0275em;
-  font-weight: 300;
+  font-weight: 200;
   font-size: .9em;
   line-height: 1.4;
 }
@@ -573,10 +573,10 @@ label {
 select {
   width: 100%;
   border: 1px #2a5e8c solid;
-  background: #319944;
-  color: #fff;
+/*  background: #319944;*/
+/*  color: #fff;*/
   font-size: 1.3em;
-  -webkit-appearance: none;
+/*  -webkit-appearance: none;*/
 }
 
 
@@ -807,6 +807,32 @@ input[name='panel']:checked + .collapsible {
     select {
         font-size: 1.6em;
     }
+
+
+    .expo-title h1 {
+      height: 4em;
+      line-height: 4;
+      font-size: 3em;
+/*      background: rgba(0, 0, 0, 0.75);*/
+    }
+
+    .expo-bio p {
+
+      height: 4em;
+   /*     float: left;
+height: 21.3em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33%;
+
+      background: #fff;
+      color: #222;
+   */
+    }
+    .expo-tour div {
+  margin-bottom: 2em;
+}
 
     }
 
