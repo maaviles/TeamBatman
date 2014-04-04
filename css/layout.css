@@ -226,15 +226,15 @@ figure img {
 }
 
 button.full-width {
-  width: 100%;
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
+  width: 100%;
 }
 
 input {
   padding: .4em 1em;
-  border-radius: 3px;
   border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 3px;
 }
 
 fieldset {
@@ -452,7 +452,7 @@ footer {
   padding-top: 3em;
 }
 
-<<<<<<< HEAD
+
 /* #Expedition Page Styles
 ================================================== */
 /*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
@@ -507,7 +507,7 @@ padding: 0;
 .expo-title ul{
 background: #155b99;
    font-weight: 100;
-   font-size: .8em;
+   font-size: 1em;
   line-height: 1.8;
 }
 .expo-info li{
@@ -532,81 +532,75 @@ text-align: center;
 margin: 1em;
 }
 
-<<<<<<< HEAD
-/* Filter Options*/
+
+/* Sort Options*/
+
 
 legend {
   font-size: 1.4em;
 }
 
-.filter-wrap {
-    text-align: center;
+.sort-wrap {
   padding-top: 1.5em;
+    text-align: center;
 }
 
-.filter{
-
-width: 100%;
+.sort{
   margin: .1em 0;
   padding: 1em 0;
-
+width: 100%;
 }
 
-.filter > p {
-/*  padding: 0;*/
-/*  margin:  0;*/
+.sort > p {
 line-height: 1;
-
 }
 
 label {
-display: none;
-
+  display: none;
 }
 
 select {
   width: 100%;
   border: 1px #2a5e8c solid;
   font-size: 1.5em;
-/*  -webkit-appearance: none;*/
 
+  -webkit-appearance: none;
 }
 
 
-=======
 /* Expedition Details Page
 ==================================================== */
 
 .detailsHeader {
+  padding-top: 10px;
   width: 100%;
   height: 175px;
-  background-color: grey;
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
     url('../img/expo-details-skateboard.jpg');
-  background-repeat: no-repeat;
+  background-color: grey;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding-top: 10px;
 }
 
 .filter {
-  text-align: center;
+  height: 50px;
   background-color: #1b72bf;
   color: white;
-  height: 50px;
+  text-align: center;
   line-height: 50px;
 }
 
 .filter li {
   display: inline;
-  padding-left: 10px;
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 .pul {
@@ -614,13 +608,13 @@ select {
 }
 
 .poiList .pul {
-  border-bottom: 2px solid #2a5e8c;
   padding-bottom: 30px;
+  border-bottom: 2px solid #2a5e8c;
 }
 
 .poiList .pul:last-child {
-  border-bottom: none;
   padding-bottom: 30px;
+  border-bottom: none;
 }
 
 .pul img {
@@ -630,8 +624,8 @@ select {
 .descList {
   padding-top: 15px;
   padding-right: 5px;
-  padding-left: 5px;
   padding-bottom: 15px;
+  padding-left: 5px;
   color: #2a5e8c;
 }
 
@@ -640,7 +634,7 @@ select {
   padding: 0 3px;
   line-height: 30px;
 }
->>>>>>> e72661a1b18fe1bef44d94145f640f58d2cb9ce6
+
 
 /* ==========================================================================
    Helper classes from h5bp.com/u
@@ -692,6 +686,7 @@ select {
 /* Expeditions Page
 ========================================== */
 
+/*
 .expedition {
   margin-top: 70px;
 }
@@ -731,8 +726,9 @@ input[name='panel'] + .collapsible {
 
 input[name='panel']:checked + .collapsible {
   overflow: auto;
-  height: 8em; /* needs a numeric value here to keep transition */
+  height: 8em;  needs a numeric value here to keep transition
 }
+*/
 
 
 /* #Media Queries
@@ -745,8 +741,8 @@ input[name='panel']:checked + .collapsible {
       }
 
       .detailsHeader {
-        height: 350px;
         padding-top: 100px;
+        height: 350px;
       }
 
       .detailsHeader h1 {
@@ -754,27 +750,27 @@ input[name='panel']:checked + .collapsible {
       }
 
       .descList {
-        border-right: 1px solid #f0f0f0;
         margin-top: 20px;
+        border-right: 1px solid #f0f0f0;
       }
 
       .descList li {
         display: block;
-        text-align: left;
         padding: 5px 0;
+        text-align: left;
         font-size: 1.3em;
       }
 
       .filter li {
-        padding-left: 25px;
         padding-right: 25px;
+        padding-left: 25px;
         font-size: 1.3em;
       }
 
       .pul p {
+        padding-top: 20px;
         text-align: left;
         font-size: 1.3em;
-        padding-top: 20px;
       }
 
       .filter {
@@ -790,8 +786,8 @@ input[name='panel']:checked + .collapsible {
     }
 
     .detailsHeader {
-      height: 350px;
       padding-top: 100px;
+      height: 350px;
     }
 
     .detailsHeader h1 {
@@ -799,27 +795,27 @@ input[name='panel']:checked + .collapsible {
     }
 
     .descList {
-      border-right: 1px solid #f0f0f0;
       margin-top: 20px;
+      border-right: 1px solid #f0f0f0;
     }
 
     .descList li {
       display: block;
-      text-align: left;
       padding: 5px 0;
+      text-align: left;
       font-size: 1.3em;
     }
 
     .filter li {
-      padding-left: 25px;
       padding-right: 25px;
+      padding-left: 25px;
       font-size: 1.3em;
     }
 
     .pul p {
+      padding-top: 20px;
       text-align: left;
       font-size: 1.3em;
-      padding-top: 20px;
     }
 
   }
@@ -937,10 +933,8 @@ input[name='panel']:checked + .collapsible {
 }
 .icon-happy:before {
   content: "\e608";
-
 }
 
 .icon-th-menu:before {
   content: "\e609";
 }
-

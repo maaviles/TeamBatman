@@ -11,16 +11,13 @@
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/layout.css">
 
-        <link rel="stylesheet" href="http://i.icomoon.io/public/temp/70f9307e71/UntitledProject1/style.css">
-
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  </head>
+    </head>
+    <body>
 
-<body>
         <!-- Primary Page Layout
   ================================================== -->
 
-<<<<<<< HEAD
 <header>
   <div class="container">
     <div class="sixteen columns clearfix navbar">
@@ -40,78 +37,18 @@
   </nav>
 </header>
 
-<!-- Removed container class form <main class="expo-main"> to make lists full width on mobile while testing things -->
+    <!-- ADDING NEW MAIN CONTENT -->
+
+    <!-- Removed container class form <main class="expo-main"> to make lists full width on mobile while testing things -->
 <main class="expo-main">
-<!--
-        <menu type="toolbar" class="four columns">  filtering of expeditions
-
-          <menu label="category">
-            <button>Cat 1</button>
-            <button>Cat 2</button>
-            <button>Cat 3</button>
-=======
-      <header>
-        <div class="container">
-          <div class="three columns navbar">
-            <h1>Voyager</h1>
-          </div>
-          <nav>
-            <form class="seven columns">
-              <fieldset class="searchPadding">
-                <input type="search" placeholder="Where do you want to go?">
-                <button type="submit" class="inverse">Search</button>
-              </fieldset>
-            </form>
-            <div class="six columns buttonPadding">
-              <button class="link-inverse">Design Expedition</button>
-              <button class="inverse">Sign Up</button>
-              <button class="link-inverse">Log In</button>
-            </div>
-          </nav>
-        </div>
-      </header>
-
-      <main class="expedition">
-        <div class="container">
-
-        <menu type="toolbar" class="four columns expFilter"> 
-
-
-          <label for="panel_1">Category</label>
-          <input type="radio" name="panel" id="panel_1">
-          <menu class="collapsible">
-            <button class="default">Cat 1</button>
-            <button class="default">Cat 2</button>
-            <button class="default">Cat 3</button>
->>>>>>> master
-          </menu>
-
-          <label for="panel_2">Price</label>
-          <input type="radio" name="panel" id="panel_2">
-          <menu class="collapsible">
-            <button class="default">Range 1</button>
-            <button class="default">Range 2</button>
-            <button class="default">Range 3</button>
-          </menu>
-
-          <label for="panel_3">Distance</label>
-          <input type="radio" name="panel" id="panel_3">
-          <menu class="collapsible">
-            <button class="default">Range 1</button>
-            <button class="default">Range 2</button>
-            <button class="default">Range 3</button>
-          </menu>
-        </menu>
-<<<<<<< HEAD
--->
-
-<form action="#" class="filter-wrap">
+<form action="#" class="sort-wrap">
   <fieldset>
   <legend>Chose your own Adventure</legend>
-  <div class="filter">
+  <div class="sort">
 
-    <label for="select-price">Price:</label>
+    <label for="select-price"></label>
     <select name="select-price" id="select-price">
+      <option value="" disabled selected>Price</option>
       <option value="Choice 1">Free</option>
       <option value="Choice 2">$0 - $20</option>
       <option value="Choice 3">$20 - $50</option>
@@ -120,10 +57,10 @@
       <option value="Choice 6">$100 - $200</option>
     </select>
   </div>
-    <div class="filter">
-
-    <label for="select-category">Category:</label>
+    <div class="sort">
+    <label for="select-category"></label>
     <select name="select-category" id="select-category">
+      <option value="" disabled selected>Category</option>
       <option value="Choice 1">Food</option>
       <option value="Choice 2">Outdoors</option>
       <option value="Choice 4">Art</option>
@@ -131,10 +68,10 @@
       <option value="Choice 6">Books</option>
     </select>
   </div>
-    <div class="filter">
-
-    <label for="select-distance">Distance:</label>
+    <div class="sort">
+    <label for="select-distance"></label>
     <select name="select-distance" id="select-distance">
+      <option value="" disabled selected>Distance</option>
       <option value="Choice 1">0 - 1 miles</option>
       <option value="Choice 2">2 - 3 miles</option>
       <option value="Choice 3">3 - 5 miles</option>
@@ -143,11 +80,18 @@
       <option value="Choice 6">15 - 20 miles</option>
     </select>
   </div>
+   <div class="sort">
+    <label for="select-rating"></label>
+    <select name="select-rating" id="select-rating">
+      <option value="" disabled selected>Rating</option>
+      <option value="Choice 1">1 star</option>
+      <option value="Choice 2">2 stars</option>
+      <option value="Choice 3">3 stars</option>
+      <option value="Choice 4">4 stars</option>
+    </select>
+  </div>
   </fieldset>
 </form>
-=======
-          -->
->>>>>>> e72661a1b18fe1bef44d94145f640f58d2cb9ce6
 
 <section class="sixteen columns expo-list">
   <h1>Expeditions</h1>
@@ -159,9 +103,10 @@
         <div class="expo-bio">
         <p>Love craft beer? I mean <em>really</em> love craft beer? Then this is the tour for you. </p>
         <ul class="expo-info">
-           <li>Price: <span> $80</span></li>
-           <li>Category: <span> Booze</span></li>
-          <li>Distance: <span> 12 miles</span></li>
+           <li class="icon-tag"><span> $80</span></li>
+           <li class="icon-books"><span> Booze</span></li>
+          <li class="icon-directions"><span> 12 miles</span></li>
+          <li><span class="icon-star"> </span> <span class="icon-star"> </span> <span class="icon-star"> </span></li>
         </ul>
         </div>
       </article>
@@ -172,9 +117,10 @@
         <div class="expo-bio">
         <p>Love craft beer? I mean <em>really</em> love craft beer? Then this is the tour for you. </p>
         <ul class="expo-info">
-           <li class="icon-tag">Price: $80</li>
-           <li>Category: Booze</li>
-          <li>Distance:  12 miles</li>
+            <li class="icon-tag"><span> $80</span></li>
+           <li class="icon-books"><span> Booze</span></li>
+          <li class="icon-directions"><span> 12 miles</span></li>
+          <li><span class="icon-star"> </span> <span class="icon-star"> </span> <span class="icon-star"> </span></li>
         </ul>
         </div>
       </article>
@@ -185,9 +131,10 @@
         <div class="expo-bio">
         <p>Love craft beer? I mean <em>really</em> love craft beer? Then this is the tour for you. </p>
         <ul class="expo-info">
-           <li>Price: <span> $80</span></li>
-           <li>Category: <span> Booze</span></li>
-          <li>Distance: <span> 12 miles</span></li>
+           <li class="icon-tag"><span> $80</span></li>
+           <li class="icon-books"><span> Booze</span></li>
+          <li class="icon-directions"><span> 12 miles</span></li>
+          <li><span class="icon-star"> </span> <span class="icon-star"> </span> <span class="icon-star"> </span></li>
         </ul>
         </div>
       </article>
@@ -198,7 +145,8 @@
 </section>
 </main>
 
-<<<<<<< HEAD
+    <!-- END NEW MAIN CONTENT -->
+
 <footer class="container">
   <nav class="sixteen columns">
     <a href="#">About Us</a>
@@ -208,226 +156,6 @@
   </nav>
   <p role="contentinfo">Copyright © 2014 Voyager, LLC</p>
 </footer>
-=======
-        <section class="twelve columns expMain">
-          <h1 class="expHeader">Expeditions</h1>
-           <!-- section containing all expeditions -->
-          <ul class="expList">
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-            <li>
-              <article>
-                <a href="expedition-details.html"><h1>Expedition Title</h1></a>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <ul class="description">
-                  <li>Category</li>
-                  <li>Price</li>
-                  <li>Distance</li>
-                  <li><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></li>
-                </ul>
-              </article>
-            </li>
-          </ul>
-          <!-- maybe add pagination? -->
-          <p>Don't see any you like? <button class="cta">Make your own!</button></p>
-        </section>
-
-      </div>
-      </main>
-
-      <footer class="container">
-        <nav class="sixteen columns">
-          <a href="#">About Us</a> | 
-          <a href="#">Contact Us</a> | 
-          <a href="#">Press</a> | 
-          <a href="#">FAQ</a>
-        </nav>
-        <p role="contentinfo" class="sixteen columns">Copyright © 2014 Voyager, LLC</p>
-      </footer>
->>>>>>> master
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
 
     </body>
 </html>
