@@ -7,6 +7,11 @@ $('#hero-form').submit(function() {
   event.preventDefault();
 });
 
+$('#select-price').on('change', function() {
+  var price = $(this).val();
+  alert(price);
+});
+
 (function(){
     var words = [
         'secret bike tour',
@@ -21,3 +26,5 @@ $('#hero-form').submit(function() {
     }, 3500);
 
 })();
+
+
