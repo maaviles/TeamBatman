@@ -29,9 +29,6 @@
 /*Fonts*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
-
-
-
 /*Colors*/
 /*
 *Dark Blue - #061f40
@@ -44,8 +41,6 @@
 
 /*Fonts*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-
-
 
 /* #Site Styles
 ================================================== */
@@ -226,15 +221,15 @@ figure img {
 }
 
 button.full-width {
-  width: 100%;
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
+  width: 100%;
 }
 
 input {
   padding: .4em 1em;
-  border-radius: 3px;
   border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 3px;
 }
 
 fieldset {
@@ -399,7 +394,6 @@ footer nav, footer p {
   color: #1b72bf;
   font-size: 6em;
 }
-
 .how-it-works figcaption {
   padding: 1.5em;
 }
@@ -409,9 +403,13 @@ footer nav, footer p {
   text-align: center;
 }
 
+/*Not sure why but the padding: 5px on this was forcing the the last
+ * featured item to drop down when viewing on the hosted version, but not in local viewing??
+ * Seems likely I have CSS somewhere that messed this up? - Chris
+ * */
 .featured {
   margin-top: 3em;
-  padding: 5px;
+/*padding: 5px;*/
   height: 200px;
   background-size: cover;
   color: #fff;
@@ -428,7 +426,7 @@ footer nav, footer p {
 }
 
 .featured-1 {
-  background-image: url('../img/beer-tour.jpg');
+  background-image: url('../img/beer-color-hdpi.jpg');
 }
 
 .featured-2 {
@@ -457,20 +455,30 @@ footer {
 /*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
 
 
-main.expo-main {
+.expo-main {
  margin-top: 70px;
+
 }
+
 
 /*Setting these <a> as display inline-block allows us to adjust padding and margin on all sides.  - Adding width 100% will allow it to fill its parent container, the <li>
  * See expo-anchors-before and after images in screenshots folder
  * */
-.expo-main article {
-margin-bottom: .8em;
-}
 
 .expo-title  h1{
 margin-bottom: 0;
-  text-align: center;
+text-align: center;
+}
+
+.expo-title {
+  background: url('../img/beer-color-hdpi.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.expo-list > h1 {
+ text-align: center;
+  margin: .3em 0 .3em;
 }
 
 .expo-list a {
@@ -479,17 +487,16 @@ margin-bottom: 0;
   color: #fff;
 }
 
-.expo-title {
-  background: url('../img/beer-tour.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.expo-title ul{
+background: #155b99;
+  text-align: center;
+   font-weight: 100;
+   font-size: 1em;
+  line-height: 2.5;
 }
 
 .expo-bio  {
-margin: 0;
-padding: 0;
- background: rgba(0, 0, 0, 0.75);
+ background: rgba(0, 0, 0, 0.65);
   color: #fff;
 }
 
@@ -503,108 +510,113 @@ padding: 0;
   line-height: 1.4;
 }
 
-.expo-title ul{
-background: #155b99;
-   font-weight: 100;
-   font-size: .8em;
-  line-height: 1.8;
-}
 .expo-info li{
  display: inline-block;
-  padding:  0 .5em;
-}
-
-.expo-info li:last-child {
-  margin-right: 0;
+padding: 0 2px;
 }
 
 .expo-info span {
-  font-size: 1em;
+  display: inline-block;
+margin: 0 0 0 4px;
 }
 
+.expo-info span.icon-star {
+margin: 0;
+padding: 0;
+}
+
+.expo-info li:last-child {
+}
+
+/*This is to target the <p> before the button*/
 .expo-list p:last-child:last-of-type{
-  margin-top: 1.5em;
+margin-top: 1.5em;
 text-align: center;
 }
 
 .expo-list button {
-margin: 1em;
+margin: 1.5em;
 }
+
 
 /* Filter Options*/
 
-legend {
+/* legend {
   font-size: 1.4em;
+=======
+.expo-tour div {
+  margin-bottom: .5em; */
+
+/* Sort Options*/
+
+
+legend {
+  word-wrap: normal;
+  font-size: 1.3em;
 }
 
-.filter-wrap {
+.expo-main {
+  padding-top: 1em;
+}
+
+.sort-wrap {
+padding-top: 1em;
+  width: 100%;
     text-align: center;
-  padding-top: 1.5em;
 }
 
-.filter{
-
-width: 100%;
-  margin: .1em 0;
-  padding: 1em 0;
-
-}
-
-.filter > p {
-/*  padding: 0;*/
-/*  margin:  0;*/
-line-height: 1;
-
+.sort{
+margin: .5em 0;
+width: 100%
 }
 
 label {
-display: none;
-
+  display: none;
 }
 
 select {
   width: 100%;
   border: 1px #2a5e8c solid;
-  font-size: 1.5em;
-/*  -webkit-appearance: none;*/
-
+  background: #319944;
+  color: #fff;
+  font-size: 1.3em;
+  -webkit-appearance: none;
 }
 
 
-=======
 /* Expedition Details Page
 ==================================================== */
 
 .detailsHeader {
+  padding-top: 10px;
   width: 100%;
   height: 175px;
-  background-color: grey;
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
     url('../img/expo-details-skateboard.jpg');
-  background-repeat: no-repeat;
+  background-color: grey;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding-top: 10px;
 }
 
 .filter {
-  text-align: center;
+  height: 50px;
   background-color: #1b72bf;
   color: white;
-  height: 50px;
+  text-align: center;
   line-height: 50px;
 }
 
 .filter li {
   display: inline;
-  padding-left: 10px;
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 .pul {
@@ -612,13 +624,13 @@ select {
 }
 
 .poiList .pul {
-  border-bottom: 2px solid #2a5e8c;
   padding-bottom: 30px;
+  border-bottom: 2px solid #2a5e8c;
 }
 
 .poiList .pul:last-child {
-  border-bottom: none;
   padding-bottom: 30px;
+  border-bottom: none;
 }
 
 .pul img {
@@ -628,8 +640,8 @@ select {
 .descList {
   padding-top: 15px;
   padding-right: 5px;
-  padding-left: 5px;
   padding-bottom: 15px;
+  padding-left: 5px;
   color: #2a5e8c;
 }
 
@@ -638,7 +650,7 @@ select {
   padding: 0 3px;
   line-height: 30px;
 }
->>>>>>> e72661a1b18fe1bef44d94145f640f58d2cb9ce6
+
 
 /* ==========================================================================
    Helper classes from h5bp.com/u
@@ -690,6 +702,7 @@ select {
 /* Expeditions Page
 ========================================== */
 
+/*
 .expedition {
   margin-top: 70px;
 }
@@ -729,8 +742,9 @@ input[name='panel'] + .collapsible {
 
 input[name='panel']:checked + .collapsible {
   overflow: auto;
-  height: 8em; /* needs a numeric value here to keep transition */
+  height: 8em;  needs a numeric value here to keep transition
 }
+*/
 
 
 /* #Media Queries
@@ -743,8 +757,8 @@ input[name='panel']:checked + .collapsible {
       }
 
       .detailsHeader {
-        height: 350px;
         padding-top: 100px;
+        height: 350px;
       }
 
       .detailsHeader h1 {
@@ -752,32 +766,51 @@ input[name='panel']:checked + .collapsible {
       }
 
       .descList {
-        border-right: 1px solid #f0f0f0;
         margin-top: 20px;
+        border-right: 1px solid #f0f0f0;
       }
 
       .descList li {
         display: block;
-        text-align: left;
         padding: 5px 0;
+        text-align: left;
         font-size: 1.3em;
       }
 
       .filter li {
-        padding-left: 25px;
         padding-right: 25px;
+        padding-left: 25px;
         font-size: 1.3em;
       }
 
       .pul p {
+        padding-top: 20px;
         text-align: left;
         font-size: 1.3em;
-        padding-top: 20px;
       }
 
       .filter {
         margin-bottom: 30px;
       }
+
+    legend {
+  word-wrap: normal;
+  font-size: 2em;
+}
+
+    .sort {
+      display: inline-block;
+      padding: 1em .3em;
+     width: 23%;
+    }
+
+    .sort:first-of-type {
+      margin-left: -.3em;
+    }
+
+    select {
+        font-size: 1.6em;
+    }
 
     }
 
@@ -788,8 +821,8 @@ input[name='panel']:checked + .collapsible {
     }
 
     .detailsHeader {
-      height: 350px;
       padding-top: 100px;
+      height: 350px;
     }
 
     .detailsHeader h1 {
@@ -797,27 +830,27 @@ input[name='panel']:checked + .collapsible {
     }
 
     .descList {
-      border-right: 1px solid #f0f0f0;
       margin-top: 20px;
+      border-right: 1px solid #f0f0f0;
     }
 
     .descList li {
       display: block;
-      text-align: left;
       padding: 5px 0;
+      text-align: left;
       font-size: 1.3em;
     }
 
     .filter li {
-      padding-left: 25px;
       padding-right: 25px;
+      padding-left: 25px;
       font-size: 1.3em;
     }
 
     .pul p {
+      padding-top: 20px;
       text-align: left;
       font-size: 1.3em;
-      padding-top: 20px;
     }
 
   }
@@ -935,10 +968,8 @@ input[name='panel']:checked + .collapsible {
 }
 .icon-happy:before {
   content: "\e608";
-
 }
 
 .icon-th-menu:before {
   content: "\e609";
 }
-
