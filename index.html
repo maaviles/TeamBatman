@@ -21,7 +21,7 @@
     <header>
       <div class="container">
         <div class="sixteen columns clearfix navbar">
-          <h1><span class="icon-directions"></span>Voyager</h1>
+          <a href="index.html"><h1><span class="icon-directions"></span>Voyager</h1></a>
           <button id="mobile-menu-trigger" class="link mobile-menu-trigger icon-th-menu"></button>
           <nav>
             <button class="link-inverse">Design an Expedition</button>
@@ -40,11 +40,10 @@
     <main>
 
       <section class="hero"> <!-- hero unit -->
-        <h1>Go on a <span>secret bike tour</span>, <i>crafted by a local</i></h1>
-        <form class="hero-form">
+        <h1>Go on a <span id="word-rotate">secret bike tour</span>, <i>crafted by a local</i></h1>
+        <form class="hero-form" id="hero-form">
           <fieldset>
-            <input class="hero-input" type="search" placeholder="Enter a city" required autofocus>
-            <button class="hero-button inverse" type="submit">Search</button>
+            <input id="hero-search" class="hero-input" type="search" placeholder="Search by city" required autofocus>
           </fieldset>
         </form>
       </section>
@@ -75,18 +74,19 @@
 
       <section class="container featured-expeditions"> <!-- featured expeditions section -->
         <h1>Featured Expeditions</h1>
-        <a href="#" class="one-third column featured featured-1"> <!-- expedition 1 -->
+        <a href="expedition-details.html" class="one-third column featured featured-1"> <!-- expedition 1 -->
           <h1>Craft Brewery Tour</h1>
         </a>
-        <a href="#" class="one-third column featured featured-2"> <!-- expedition 2 -->
+        <a href="expedition-details.html" class="one-third column featured featured-2"> <!-- expedition 2 -->
           <h1>Secret Bike Tour</h1>
         </a>
-        <a href="#" class="one-third column featured featured-3"> <!-- expedition 3 -->
+        <a href="expedition-details.html" class="one-third column featured featured-3"> <!-- expedition 3 -->
           <h1>Space Needle Tour</h1>
         </a>
       </section>
+
       <div class="call-to-action">
-        <button class="big default">Plan your Saturday today!</button>
+        <button class="big default" onClick="window.location = 'expeditions.html';">Plan your Saturday today!</button>
       </div>
     </main>
     <footer class="container">

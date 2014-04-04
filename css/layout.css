@@ -29,18 +29,6 @@
 /*Fonts*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
-/*Colors*/
-/*
-*Dark Blue - #061f40
-*#1b72bf
-*#2a5e8c
-#2393d9
-#404040
-#3ab851
-*/
-
-/*Fonts*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
 /* #Site Styles
 ================================================== */
@@ -349,13 +337,11 @@ footer nav, footer p {
 }
 
 .hero-form {
-  margin: 4em auto;
-  width: 65vw;
+  text-align: center;
+  margin-top: 3em;
 }
 
 .hero-input {
-  display: inline-block;
-  width: calc(100% - 142px);
   border-color: #fff;
   background-color: rgba(0,0,0,0);
   color: white;
@@ -442,6 +428,11 @@ footer nav, footer p {
   text-align: center;
 }
 
+.toExpoPage {
+  margin: 2em;
+  text-align: center;
+}
+
 footer {
   text-align: center;
 }
@@ -450,14 +441,17 @@ footer {
   padding-top: 3em;
 }
 
-
 /* #Expedition Page Styles
 ================================================== */
 /*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
 
+.expoHeader {
+  margin-top: 70px;
+  padding-top: 80px;
+}
 
 .expo-main {
- margin-top: 70px;
+ margin-top: 20px;
 
 }
 
@@ -539,9 +533,18 @@ text-align: center;
 margin: 1.5em;
 }
 
-.expo-tour div {
-  margin-bottom: .5em;
+.expoHeader {
+  width: 100%;
 }
+
+
+/* Filter Options*/
+
+/* legend {
+  font-size: 1.4em;
+=======
+.expo-tour div {
+  margin-bottom: .5em; */
 
 /* Sort Options*/
 
@@ -647,6 +650,23 @@ select {
   line-height: 30px;
 }
 
+.kings {
+  width: 100%;
+  min-height: 200px;
+  background:
+    url('../img/beer-color-hdpi.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.map img {
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes from h5bp.com/u
@@ -748,51 +768,51 @@ input[name='panel']:checked + .collapsible {
 
   /* Larger than standard 960 (devices and browsers) */
   @media only screen and (min-width: 960px) {
-      .hero h1 {
-        font-size: 2.3em;
-      }
+    .hero h1 {
+      font-size: 2.3em;
+    }
 
-      .detailsHeader {
-        padding-top: 100px;
-        height: 350px;
-      }
+    .detailsHeader {
+      padding-top: 100px;
+      height: 350px;
+    }
 
-      .detailsHeader h1 {
-        font-size: 3em;
-      }
+    .detailsHeader h1 {
+      font-size: 3em;
+    }
 
-      .descList {
-        margin-top: 20px;
-        border-right: 1px solid #f0f0f0;
-      }
+    .descList {
+      margin-top: 20px;
+      border-right: 1px solid #f0f0f0;
+    }
 
-      .descList li {
-        display: block;
-        padding: 5px 0;
-        text-align: left;
-        font-size: 1.3em;
-      }
+    .descList li {
+      display: block;
+      padding: 5px 0;
+      text-align: left;
+      font-size: 1.3em;
+    }
 
-      .filter li {
-        padding-right: 25px;
-        padding-left: 25px;
-        font-size: 1.3em;
-      }
+    .filter li {
+      padding-right: 25px;
+      padding-left: 25px;
+      font-size: 1.3em;
+    }
 
-      .pul p {
-        padding-top: 20px;
-        text-align: left;
-        font-size: 1.3em;
-      }
+    .pul p {
+      padding-top: 20px;
+      text-align: left;
+      font-size: 1.3em;
+    }
 
-      .filter {
-        margin-bottom: 30px;
-      }
+    .filter {
+      margin-bottom: 30px;
+    }
 
     legend {
-  word-wrap: normal;
-  font-size: 2em;
-}
+      word-wrap: normal;
+      font-size: 2em;
+    }
 
     .sort {
       display: inline-block;
@@ -808,6 +828,7 @@ input[name='panel']:checked + .collapsible {
         font-size: 1.6em;
     }
 
+<<<<<<< HEAD
 
     .expo-title h1 {
       height: 4em;
@@ -834,7 +855,18 @@ height: 21.3em;
   margin-bottom: 2em;
 }
 
+=======
+    .map img {
+      width: 75%;
     }
+
+    .hero-input {
+      width: 50vw;
+>>>>>>> 9db9e7c1a49a991ff60aa08aaf9438aa5bf6a415
+    }
+    
+
+  }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
   @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -875,6 +907,15 @@ height: 21.3em;
       font-size: 1.3em;
     }
 
+
+    .map img {
+      width: 75%;
+    }
+
+    .hero-input {
+      width: 60vw;
+    }
+
   }
 
   /* All Mobile Sizes (devices and browser) */
@@ -891,20 +932,21 @@ height: 21.3em;
       line-height: 70px;
     }
 
-    .hero-form {
-      margin: 4em auto;
-    }
-
-    .hero-input {
-      width: 100%;
-    }
-
-    .hero-button {
-      display: none;
-    }
-
     .hero {
       height: 20em;
+    }
+
+    .call-to-action {
+      margin: 3em;
+      font-size: 0.7em;
+    }
+
+    .call-to-action button {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%;
     }
   }
 
@@ -912,6 +954,10 @@ height: 21.3em;
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .hero h1 {
       font-size: 1.8em;
+    }
+
+    .hero-input {
+      width: 60vw;
     }
   }
 
