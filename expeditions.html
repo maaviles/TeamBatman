@@ -39,7 +39,7 @@
 
 <article>
   <section class="expoHeader detailsHeader">
-    <h1>Expeditions</h1>
+    <h1>Seattle Expeditions</h1>
   </section>
 </article>
 
@@ -57,7 +57,7 @@
     <select name="select-price" id="select-price">
       <option value="" disabled selected>Price</option>
       <option value="Free">Free</option>
-      <option value="$0 - $20">$0 - $20</option>
+      <option value="$20">$0 - $20</option>
       <option value="$20 - $50">$20 - $50</option>
       <option value="$50 - $75">$50 - $75</option>
       <option value="$75 - $100">$75 - $100</option>
@@ -103,8 +103,8 @@
 <section class="container columns expo-list">
   <h1>Expeditions</h1>
    <!-- section containing all expeditions -->
-  <ul class="clearfix">
-  <div class="sixteen columns expo-tour">
+  <ul class="clearfix" id="all">
+  <div class="sixteen columns expo-tour" id="free">
     <li class="expo-title">
       <article>
         <a href="expedition-details.html"><h1>Craft Brewery Tour</h1></a>
@@ -120,7 +120,7 @@
       </article>
     </li>
 </div>
-    <div class="sixteen columns expo-tour">
+    <div class="sixteen columns expo-tour" id="25">
     <li class="expo-title">
       <article>
         <a href="expedition-details.html"><h1>Secret Bike Tour</h1></a>
@@ -136,7 +136,7 @@
       </article>
     </li>
 </div>
-        <div class="sixteen columns expo-tour">
+        <div class="sixteen columns expo-tour" id="60">
     <li class="expo-title">
       <article>
         <a href="expedition-details.html"><h1>Swimming Tour</h1></a>

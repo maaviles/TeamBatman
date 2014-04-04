@@ -7,11 +7,6 @@ $('#hero-form').submit(function() {
   event.preventDefault();
 });
 
-$('#select-price').on('change', function() {
-  var price = $(this).val();
-  alert(price);
-});
-
 (function(){
     var words = [
         'secret bike tour',
@@ -26,5 +21,25 @@ $('#select-price').on('change', function() {
     }, 3500);
 
 })();
+
+
+function filter() {
+  $('#select-price').on('change', function() {
+    var price = $(this).val();
+
+    if (price != "Free") {
+      $('#free').hide();
+      console.log("price isn't free");
+    } else {
+      $('#free').show();
+      $('#')
+    }
+
+  });
+};
+
+filter();
+
+
 
 
