@@ -660,6 +660,13 @@ select {
   background-repeat: no-repeat;
 }
 
+.map img {
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes from h5bp.com/u
@@ -821,12 +828,16 @@ input[name='panel']:checked + .collapsible {
         font-size: 1.6em;
     }
 
+    .map img {
+      width: 75%;
+    }
+
     .hero-input {
       width: 50vw;
     }
+    
 
-    }
-
+  }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
   @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -865,6 +876,11 @@ input[name='panel']:checked + .collapsible {
       padding-top: 20px;
       text-align: left;
       font-size: 1.3em;
+    }
+
+
+    .map img {
+      width: 75%;
     }
 
     .hero-input {
