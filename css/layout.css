@@ -430,6 +430,11 @@ footer nav, footer p {
   text-align: center;
 }
 
+.toExpoPage {
+  margin: 2em;
+  text-align: center;
+}
+
 footer {
   text-align: center;
 }
