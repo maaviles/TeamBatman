@@ -32,7 +32,8 @@ function filter() {
       console.log("price isn't free");
     } else {
       $('#free').show();
-      $('#')
+      $('#25').hide();
+      $('#60').hide();
     }
 
   });
