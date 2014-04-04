@@ -349,13 +349,11 @@ footer nav, footer p {
 }
 
 .hero-form {
-  margin: 4em auto;
-  width: 65vw;
+  text-align: center;
+  margin-top: 3em;
 }
 
 .hero-input {
-  display: inline-block;
-  width: calc(100% - 142px);
   border-color: #fff;
   background-color: rgba(0,0,0,0);
   color: white;
@@ -812,6 +810,10 @@ input[name='panel']:checked + .collapsible {
         font-size: 1.6em;
     }
 
+    .hero-input {
+      width: 50vw;
+    }
+
     }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -853,6 +855,10 @@ input[name='panel']:checked + .collapsible {
       font-size: 1.3em;
     }
 
+    .hero-input {
+      width: 60vw;
+    }
+
   }
 
   /* All Mobile Sizes (devices and browser) */
@@ -867,18 +873,6 @@ input[name='panel']:checked + .collapsible {
       color: white;
       font-size: 2em;
       line-height: 70px;
-    }
-
-    .hero-form {
-      margin: 4em auto;
-    }
-
-    .hero-input {
-      width: 100%;
-    }
-
-    .hero-button {
-      display: none;
     }
 
     .hero {
@@ -903,6 +897,10 @@ input[name='panel']:checked + .collapsible {
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .hero h1 {
       font-size: 1.8em;
+    }
+
+    .hero-input {
+      width: 60vw;
     }
   }
 
