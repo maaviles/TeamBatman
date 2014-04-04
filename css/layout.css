@@ -884,6 +884,19 @@ input[name='panel']:checked + .collapsible {
     .hero {
       height: 20em;
     }
+
+    .call-to-action {
+      margin: 3em;
+      font-size: 0.7em;
+    }
+
+    .call-to-action button {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%;
+    }
   }
 
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
