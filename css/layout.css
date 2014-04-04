@@ -447,9 +447,12 @@ footer {
 ================================================== */
 /*Since main HEADER is fix, with height of 70px, I'm pushing the MAIN content down: ;*/
 
+.expoHeader {
+  padding-top: 10px;
+}
 
 .expo-main {
- margin-top: 70px;
+ margin-top: 20px;
 
 }
 
@@ -529,6 +532,10 @@ text-align: center;
 
 .expo-list button {
 margin: 1.5em;
+}
+
+.expoHeader {
+  width: 100%;
 }
 
 
